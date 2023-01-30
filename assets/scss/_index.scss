@@ -1,0 +1,23 @@
+.heroSection {
+    height: 500px;
+    & .categoryPart {
+        width: 400px;
+        height: 100%;
+        background-color: $theme1;
+    }
+    & .bannerPart {
+        width: calc(100% - 400px);
+        & .swiper {
+            width: 100%;
+            height: 100%;
+            & .swiper-slide {
+                background-position: center;
+                background-size: cover;
+                & img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

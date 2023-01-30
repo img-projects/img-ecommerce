@@ -1,0 +1,26 @@
+.navbar {
+    & .navbar-brand {
+        & img {
+            height: 3.75rem;
+        }
+    }
+    & .iconBar {
+        & .nav-item {
+            &.searchBar {
+                & input {
+                    padding-left: 40px;
+                    caret-color: $theme1;
+                    font-size: 14px;
+                    height: 38px;
+                    &::placeholder {
+                        color: $gray-600;
+                    }
+                }
+                & img {
+                    left: 20px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}
