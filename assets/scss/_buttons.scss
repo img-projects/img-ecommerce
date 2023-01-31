@@ -1,2 +1,11 @@
-
+.btnStyle1 {
+    color: $white;
+    font-size: 14px;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $white !important;
+        box-shadow: none !important;
+    }
+}
 
