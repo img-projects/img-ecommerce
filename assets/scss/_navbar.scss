@@ -13,7 +13,7 @@
             & .LinkAnchor {
                 color: $gray-900;
                 text-decoration: none;
-                font-size: 14px;
+                font-size: 13px;
                 text-transform: uppercase;
                 font-weight: 400;
                 letter-spacing: 0.2px;
@@ -129,3 +129,674 @@
         }
     }
 }
+
+
+@mixin navbar-mixin-min-sm(){
+    .Header {
+    & .logoBox {
+        & svg {
+        }
+    }
+    & .LinkBox {
+        & .LinkLi {
+            & .LinkAnchor {
+            }
+            & .liHoverBox {
+                & .subCatLiHead {
+                    &::before {
+                    }
+                }
+                & .subCatLi {
+                    & .subCatAnchor {
+                    }
+                    &::before {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        & .subCatAnchor {
+                        }
+                    }
+                }
+                & .subCategoryLi {
+                    &.active {
+                    }
+                }
+                & .innerCatBox {
+                    &.active {
+                    }
+                }
+            }
+            &.LinkLiSingleHover {
+                & .liHoverBox {
+                }
+            }
+            &:hover {
+                & .LinkAnchor {
+                }
+                & .liHoverBox {
+                }
+            }
+        }
+    }
+    & .iconBox {
+        & .iconLi {
+            & .iconAnchor {
+                & img {
+                }
+                & .cartValue {
+                }
+            }
+        }
+    }
+}
+};
+@mixin navbar-mixin-min-md(){
+    .Header {
+    & .logoBox {
+        & svg {
+        }
+    }
+    & .LinkBox {
+        & .LinkLi {
+            & .LinkAnchor {
+            }
+            & .liHoverBox {
+                & .subCatLiHead {
+                    &::before {
+                    }
+                }
+                & .subCatLi {
+                    & .subCatAnchor {
+                    }
+                    &::before {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        & .subCatAnchor {
+                        }
+                    }
+                }
+                & .subCategoryLi {
+                    &.active {
+                    }
+                }
+                & .innerCatBox {
+                    &.active {
+                    }
+                }
+            }
+            &.LinkLiSingleHover {
+                & .liHoverBox {
+                }
+            }
+            &:hover {
+                & .LinkAnchor {
+                }
+                & .liHoverBox {
+                }
+            }
+        }
+    }
+    & .iconBox {
+        & .iconLi {
+            & .iconAnchor {
+                & img {
+                }
+                & .cartValue {
+                }
+            }
+        }
+    }
+}
+};
+@mixin navbar-mixin-min-lg(){
+    .Header {
+    & .logoBox {
+        & svg {
+        }
+    }
+    & .LinkBox {
+        & .LinkLi {
+            & .LinkAnchor {
+            }
+            & .liHoverBox {
+                & .subCatLiHead {
+                    &::before {
+                    }
+                }
+                & .subCatLi {
+                    & .subCatAnchor {
+                    }
+                    &::before {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        & .subCatAnchor {
+                        }
+                    }
+                }
+                & .subCategoryLi {
+                    &.active {
+                    }
+                }
+                & .innerCatBox {
+                    &.active {
+                    }
+                }
+            }
+            &.LinkLiSingleHover {
+                & .liHoverBox {
+                }
+            }
+            &:hover {
+                & .LinkAnchor {
+                }
+                & .liHoverBox {
+                }
+            }
+        }
+    }
+    & .iconBox {
+        & .iconLi {
+            & .iconAnchor {
+                & img {
+                }
+                & .cartValue {
+                }
+            }
+        }
+    }
+}
+};
+@mixin navbar-mixin-min-xl(){
+    .Header {
+    & .logoBox {
+        & svg {
+        }
+    }
+    & .LinkBox {
+        & .LinkLi {
+            & .LinkAnchor {
+            }
+            & .liHoverBox {
+                & .subCatLiHead {
+                    &::before {
+                    }
+                }
+                & .subCatLi {
+                    & .subCatAnchor {
+                    }
+                    &::before {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        & .subCatAnchor {
+                        }
+                    }
+                }
+                & .subCategoryLi {
+                    &.active {
+                    }
+                }
+                & .innerCatBox {
+                    &.active {
+                    }
+                }
+            }
+            &.LinkLiSingleHover {
+                & .liHoverBox {
+                }
+            }
+            &:hover {
+                & .LinkAnchor {
+                }
+                & .liHoverBox {
+                }
+            }
+        }
+    }
+    & .iconBox {
+        & .iconLi {
+            & .iconAnchor {
+                & img {
+                }
+                & .cartValue {
+                }
+            }
+        }
+    }
+}
+};
+@mixin navbar-mixin-min-xxl(){
+    .Header {
+    & .logoBox {
+        & svg {
+        }
+    }
+    & .LinkBox {
+        & .LinkLi {
+            & .LinkAnchor {
+            }
+            & .liHoverBox {
+                & .subCatLiHead {
+                    &::before {
+                    }
+                }
+                & .subCatLi {
+                    & .subCatAnchor {
+                    }
+                    &::before {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        & .subCatAnchor {
+                        }
+                    }
+                }
+                & .subCategoryLi {
+                    &.active {
+                    }
+                }
+                & .innerCatBox {
+                    &.active {
+                    }
+                }
+            }
+            &.LinkLiSingleHover {
+                & .liHoverBox {
+                }
+            }
+            &:hover {
+                & .LinkAnchor {
+                }
+                & .liHoverBox {
+                }
+            }
+        }
+    }
+    & .iconBox {
+        & .iconLi {
+            & .iconAnchor {
+                & img {
+                }
+                & .cartValue {
+                }
+            }
+        }
+    }
+}
+};
+@mixin navbar-mixin-max-xl(){
+    .Header {
+    & .logoBox {
+        & svg {
+        }
+    }
+    & .LinkBox {
+        & .LinkLi {
+            & .LinkAnchor {
+            }
+            & .liHoverBox {
+                & .subCatLiHead {
+                    &::before {
+                    }
+                }
+                & .subCatLi {
+                    & .subCatAnchor {
+                    }
+                    &::before {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        & .subCatAnchor {
+                        }
+                    }
+                }
+                & .subCategoryLi {
+                    &.active {
+                    }
+                }
+                & .innerCatBox {
+                    &.active {
+                    }
+                }
+            }
+            &.LinkLiSingleHover {
+                & .liHoverBox {
+                }
+            }
+            &:hover {
+                & .LinkAnchor {
+                }
+                & .liHoverBox {
+                }
+            }
+        }
+    }
+    & .iconBox {
+        & .iconLi {
+            & .iconAnchor {
+                & img {
+                }
+                & .cartValue {
+                }
+            }
+        }
+    }
+}
+};
+@mixin navbar-mixin-max-1300(){
+    .Header {
+    & .logoBox {
+        & svg {
+        }
+    }
+    & .LinkBox {
+        & .LinkLi {
+            & .LinkAnchor {
+            }
+            & .liHoverBox {
+                & .subCatLiHead {
+                    &::before {
+                    }
+                }
+                & .subCatLi {
+                    & .subCatAnchor {
+                    }
+                    &::before {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        & .subCatAnchor {
+                        }
+                    }
+                }
+                & .subCategoryLi {
+                    &.active {
+                    }
+                }
+                & .innerCatBox {
+                    &.active {
+                    }
+                }
+            }
+            &.LinkLiSingleHover {
+                & .liHoverBox {
+                }
+            }
+            &:hover {
+                & .LinkAnchor {
+                }
+                & .liHoverBox {
+                }
+            }
+        }
+    }
+    & .iconBox {
+        & .iconLi {
+            & .iconAnchor {
+                & img {
+                }
+                & .cartValue {
+                }
+            }
+        }
+    }
+}
+};
+@mixin navbar-mixin-max-lg(){
+    .Header {
+    & .logoBox {
+        & svg {
+        }
+    }
+    & .LinkBox {
+        & .LinkLi {
+            & .LinkAnchor {
+            }
+            & .liHoverBox {
+                & .subCatLiHead {
+                    &::before {
+                    }
+                }
+                & .subCatLi {
+                    & .subCatAnchor {
+                    }
+                    &::before {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        & .subCatAnchor {
+                        }
+                    }
+                }
+                & .subCategoryLi {
+                    &.active {
+                    }
+                }
+                & .innerCatBox {
+                    &.active {
+                    }
+                }
+            }
+            &.LinkLiSingleHover {
+                & .liHoverBox {
+                }
+            }
+            &:hover {
+                & .LinkAnchor {
+                }
+                & .liHoverBox {
+                }
+            }
+        }
+    }
+    & .iconBox {
+        & .iconLi {
+            & .iconAnchor {
+                & img {
+                }
+                & .cartValue {
+                }
+            }
+        }
+    }
+}
+};
+@mixin navbar-mixin-max-md(){
+    .Header {
+        height: 65px !important;
+    & .logoBox {
+        & svg {
+            width: 90px !important;
+            height: 65px !important;
+        }
+    }
+    & .LinkBox {
+        & .LinkLi {
+            & .LinkAnchor {
+            }
+            & .liHoverBox {
+                & .subCatLiHead {
+                    &::before {
+                    }
+                }
+                & .subCatLi {
+                    & .subCatAnchor {
+                    }
+                    &::before {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        & .subCatAnchor {
+                        }
+                    }
+                }
+                & .subCategoryLi {
+                    &.active {
+                    }
+                }
+                & .innerCatBox {
+                    &.active {
+                    }
+                }
+            }
+            &.LinkLiSingleHover {
+                & .liHoverBox {
+                }
+            }
+            &:hover {
+                & .LinkAnchor {
+                }
+                & .liHoverBox {
+                }
+            }
+        }
+    }
+    & .iconBox {
+        & .iconLi {
+            & .iconAnchor {
+                & img {
+                }
+                & .cartValue {
+                }
+            }
+        }
+    }
+}
+};
+@mixin navbar-mixin-max-sm(){
+    .Header {
+    & .logoBox {
+        & svg {
+        }
+    }
+    & .LinkBox {
+        & .LinkLi {
+            & .LinkAnchor {
+            }
+            & .liHoverBox {
+                & .subCatLiHead {
+                    &::before {
+                    }
+                }
+                & .subCatLi {
+                    & .subCatAnchor {
+                    }
+                    &::before {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        & .subCatAnchor {
+                        }
+                    }
+                }
+                & .subCategoryLi {
+                    &.active {
+                    }
+                }
+                & .innerCatBox {
+                    &.active {
+                    }
+                }
+            }
+            &.LinkLiSingleHover {
+                & .liHoverBox {
+                }
+            }
+            &:hover {
+                & .LinkAnchor {
+                }
+                & .liHoverBox {
+                }
+            }
+        }
+    }
+    & .iconBox {
+        & .iconLi {
+            & .iconAnchor {
+                & img {
+                }
+                & .cartValue {
+                }
+            }
+        }
+    }
+}
+};
+@mixin navbar-mixin-max-xs(){
+    .Header {
+    & .logoBox {
+        & svg {
+        }
+    }
+    & .LinkBox {
+        & .LinkLi {
+            & .LinkAnchor {
+            }
+            & .liHoverBox {
+                & .subCatLiHead {
+                    &::before {
+                    }
+                }
+                & .subCatLi {
+                    & .subCatAnchor {
+                    }
+                    &::before {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                        & .subCatAnchor {
+                        }
+                    }
+                }
+                & .subCategoryLi {
+                    &.active {
+                    }
+                }
+                & .innerCatBox {
+                    &.active {
+                    }
+                }
+            }
+            &.LinkLiSingleHover {
+                & .liHoverBox {
+                }
+            }
+            &:hover {
+                & .LinkAnchor {
+                }
+                & .liHoverBox {
+                }
+            }
+        }
+    }
+    & .iconBox {
+        & .iconLi {
+            & .iconAnchor {
+                & img {
+                }
+                & .cartValue {
+                }
+            }
+        }
+    }
+}
+};
+
+
+
+
+
+

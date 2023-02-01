@@ -13,5 +13,35 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $theme2;
+  background-color: $theme1;
+}
+
+.bodyWrapper {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  & .bodyWrapperInner {
+    position: relative;
+    z-index: 1051;
+    width: 100%;
+    & .bosyWrapperMain {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      & .Header {
+        flex: 0 0 auto;
+      }
+      & .bodyScrollPart {
+        flex: 1 1 auto;
+        height: 100%;
+        overflow-y: auto;
+      }
+      & .mobileFooter {
+        flex: 0 0 auto;
+      }
+    }
+  }
 }

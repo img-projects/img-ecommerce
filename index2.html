@@ -64,317 +64,859 @@
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
-<body>
-    <!-- Header Starts Here -->
-    <div class="container-fluid Header">
-        <div class="container position-relative">
-            <div class="row mx-0 align-items-center justify-content-between">
-                <div class="col-xl-3 col-lg-2 col-auto logoBox">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="400px" height="82px" viewBox="0 0 400 82" enable-background="new 0 0 400 82" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"><text transform="matrix(1 0 0 1 69.7529 415.1504)"><tspan x="0" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="-3">A</tspan><tspan x="50.544" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="1">V</tspan><tspan x="105.983" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="3">ONE</tspan></text><g><path d="M54.766,67.227H27.107L22.81,80.229H0L28.54,2.543h25.014l28.43,77.687h-22.92L54.766,67.227z M49.367,50.918l-8.375-25.345l-8.485,25.345H49.367z"></path><path d="M100.386,2.212l17.631,56.199l17.521-56.199h23.03l-26.667,78.018h-27.878L77.356,2.212H100.386z"></path><path d="M225.401,6.124c6.062,3.416,10.835,8.173,14.326,14.27c3.488,6.099,5.234,12.968,5.234,20.607c0,7.641-1.764,14.509-5.291,20.605c-3.527,6.099-8.318,10.854-14.381,14.27c-6.059,3.417-12.725,5.125-19.998,5.125c-7.272,0-13.959-1.708-20.057-5.125c-6.099-3.416-10.908-8.171-14.435-14.27c-3.527-6.097-5.288-12.965-5.288-20.605c0-7.64,1.761-14.509,5.288-20.607c3.527-6.097,8.336-10.854,14.435-14.27c6.098-3.416,12.784-5.125,20.057-5.125C212.637,0.999,219.342,2.708,225.401,6.124z M192.289,26.399c-3.159,3.564-4.741,8.43-4.741,14.602c0,6.023,1.582,10.836,4.741,14.435c3.157,3.601,7.491,5.399,13.003,5.399c5.435,0,9.733-1.799,12.893-5.399c3.156-3.599,4.738-8.411,4.738-14.435c0-6.172-1.563-11.037-4.684-14.602c-3.125-3.563-7.438-5.345-12.947-5.345C199.78,21.055,195.446,22.837,192.289,26.399z"></path><path d="M332.231,80.229h-21.707l-28.648-43.526v43.526h-21.711V2.322h21.711l28.648,44.077V2.322h21.707V80.229z"></path><path d="M371.462,19.513v12.893h25.232v16.419h-25.232v14.104H400v17.301h-50.249V2.212H400v17.301H371.462z"></path></g></svg>
-                </div>
-                <div class="col-xl-6 col-lg-7 d-none d-lg-block">
-                    <ul class="list-unstyled m-0 p-0 d-flex align-items-center justify-content-between LinkBox">
-                        <li class="LinkLi">
-                            <a class="LinkAnchor" href="javascript:;">Fashion</a>
-                            <div class="liHoverBox position-absolute top-100 start-0 w-100 shadow-sm bg-white">
-                                <div class="container py-4">
-                                    <div class="row mx-0">
-                                        <div class="col-2">
+<body class="vh-100 overflow-hidden">
+    <div class="bodyWrapper">
+        <div class="bodyWrapperInner h-100">
+            <div class="bosyWrapperMain h-100">
+                <!-- Header Starts Here -->
+                <div class="container-fluid Header">
+                    <div class="container position-relative">
+                        <div class="row mx-0 align-items-center justify-content-between">
+                            <div class="col-xl-3 col-lg-2 col-auto logoBox px-0">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="400px" height="82px" viewBox="0 0 400 82" enable-background="new 0 0 400 82" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"><text transform="matrix(1 0 0 1 69.7529 415.1504)"><tspan x="0" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="-3">A</tspan><tspan x="50.544" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="1">V</tspan><tspan x="105.983" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="3">ONE</tspan></text><g><path d="M54.766,67.227H27.107L22.81,80.229H0L28.54,2.543h25.014l28.43,77.687h-22.92L54.766,67.227z M49.367,50.918l-8.375-25.345l-8.485,25.345H49.367z"></path><path d="M100.386,2.212l17.631,56.199l17.521-56.199h23.03l-26.667,78.018h-27.878L77.356,2.212H100.386z"></path><path d="M225.401,6.124c6.062,3.416,10.835,8.173,14.326,14.27c3.488,6.099,5.234,12.968,5.234,20.607c0,7.641-1.764,14.509-5.291,20.605c-3.527,6.099-8.318,10.854-14.381,14.27c-6.059,3.417-12.725,5.125-19.998,5.125c-7.272,0-13.959-1.708-20.057-5.125c-6.099-3.416-10.908-8.171-14.435-14.27c-3.527-6.097-5.288-12.965-5.288-20.605c0-7.64,1.761-14.509,5.288-20.607c3.527-6.097,8.336-10.854,14.435-14.27c6.098-3.416,12.784-5.125,20.057-5.125C212.637,0.999,219.342,2.708,225.401,6.124z M192.289,26.399c-3.159,3.564-4.741,8.43-4.741,14.602c0,6.023,1.582,10.836,4.741,14.435c3.157,3.601,7.491,5.399,13.003,5.399c5.435,0,9.733-1.799,12.893-5.399c3.156-3.599,4.738-8.411,4.738-14.435c0-6.172-1.563-11.037-4.684-14.602c-3.125-3.563-7.438-5.345-12.947-5.345C199.78,21.055,195.446,22.837,192.289,26.399z"></path><path d="M332.231,80.229h-21.707l-28.648-43.526v43.526h-21.711V2.322h21.711l28.648,44.077V2.322h21.707V80.229z"></path><path d="M371.462,19.513v12.893h25.232v16.419h-25.232v14.104H400v17.301h-50.249V2.212H400v17.301H371.462z"></path></g></svg>
+                            </div>
+                            <div class="col-xl-6 col-lg-7 d-none d-lg-block">
+                                <ul class="list-unstyled m-0 p-0 d-flex align-items-center justify-content-between LinkBox">
+                                    <li class="LinkLi">
+                                        <a class="LinkAnchor" href="javascript:;">Fashion</a>
+                                        <div class="liHoverBox position-absolute top-100 start-0 w-100 shadow-sm bg-white">
+                                            <div class="container py-4">
+                                                <div class="row mx-0">
+                                                    <div class="col-2">
+                                                        <div class="">
+                                                            <div class="subCategoryLi active" cat-sec="category1">Women</div>
+                                                            <div class="subCategoryLi" cat-sec="category2">Men's</div>
+                                                            <div class="subCategoryLi" cat-sec="category3">Kids</div>
+                                                            <div class="subCategoryLi" cat-sec="category4">Accessories</div>
+                                                            <div class="subCategoryLi" cat-sec="category5">Men's Fashion</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <div class="row mx-0 innerCatBox active" id="category1">
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Women Ethnic Wear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">All</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Sarees</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Kurtas & Kurties</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Kurtas Sets & Salwar</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Gown</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Lehenga Cholis</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Women Western Wear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">All</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Tops</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Dresses</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women t-Shirts</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Jeans</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Nightsuit</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Women Footwear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">All</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Flats</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Heels</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Wedges</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Casual Shoes</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Flip Flops</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatImgBox">
+                                                                    <img src="assets/img/women.jpg" class="w-100" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mx-0 innerCatBox"  id="category2">
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Men's Top Wear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category 2</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Men's Bottom Wear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Men's Footwear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatImgBox">
+                                                                    <img src="assets/img/men.jpg" class="w-100" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mx-0 innerCatBox"  id="category3">
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Boys Wear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category 3</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Girls Wear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Footwear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatImgBox">
+                                                                    <img src="assets/img/kids.jpg" class="w-100" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mx-0 innerCatBox"  id="category4">
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Footwear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category 4</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Footwear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Footwear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatImgBox">
+                                                                    <img src="assets/img/kids.jpg" class="w-100" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mx-0 innerCatBox"  id="category5">
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Footwear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category 5</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Footwear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatLiHead">Footwear</div>
+                                                                <ul class="list-unstyled m-0 p-0">
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                    <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="subCatImgBox">
+                                                                    <img src="assets/img/kids.jpg" class="w-100" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="LinkLi LinkLiSingleHover">
+                                        <a class="LinkAnchor" href="javascript:;">Electronics</a>
+                                        <div class="liHoverBox position-absolute top-100 start-0 w-100 shadow-sm bg-white">
                                             <div class="">
-                                                <div class="subCategoryLi active" cat-sec="category1">Women</div>
-                                                <div class="subCategoryLi" cat-sec="category2">Men's</div>
-                                                <div class="subCategoryLi" cat-sec="category3">Kids</div>
-                                                <div class="subCategoryLi" cat-sec="category4">Accessories</div>
-                                                <div class="subCategoryLi" cat-sec="category5">Men's Fashion</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-10">
-                                            <div class="row mx-0 innerCatBox active" id="category1">
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Women Ethnic Wear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">All</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Sarees</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Kurtas & Kurties</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Kurtas Sets & Salwar</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Gown</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Lehenga Cholis</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Women Western Wear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">All</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Tops</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Dresses</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women t-Shirts</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Jeans</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Nightsuit</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Women Footwear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">All</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Flats</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Heels</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Wedges</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Casual Shoes</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Women Flip Flops</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatImgBox">
-                                                        <img src="assets/img/women.jpg" class="w-100" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row mx-0 innerCatBox"  id="category2">
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Men's Top Wear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category 2</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Men's Bottom Wear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Men's Footwear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatImgBox">
-                                                        <img src="assets/img/men.jpg" class="w-100" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row mx-0 innerCatBox"  id="category3">
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Boys Wear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category 3</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Girls Wear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Footwear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatImgBox">
-                                                        <img src="assets/img/kids.jpg" class="w-100" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row mx-0 innerCatBox"  id="category4">
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Footwear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category 4</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Footwear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Footwear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatImgBox">
-                                                        <img src="assets/img/kids.jpg" class="w-100" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row mx-0 innerCatBox"  id="category5">
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Footwear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category 5</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Footwear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatLiHead">Footwear</div>
-                                                    <ul class="list-unstyled m-0 p-0">
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                        <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="subCatImgBox">
-                                                        <img src="assets/img/kids.jpg" class="w-100" alt="">
+                                                <div class="row mx-0">
+                                                    <div class="col-12">
+                                                        <ul class="list-unstyled m-0 p-0">
+                                                            <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                            <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                            <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                            <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                            <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                            <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                            <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                            <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    </li>
+                                    <li class="LinkLi"><a class="LinkAnchor" href="javascript:;">Home</a></li>
+                                    <li class="LinkLi"><a class="LinkAnchor" href="javascript:;">Beauty</a></li>
+                                    <li class="LinkLi"><a class="LinkAnchor" href="javascript:;">Grocery</a></li>
+                                    <li class="LinkLi"><a class="LinkAnchor" href="javascript:;">Appliances</a></li>
+                                </ul>
+                            </div> 
+                            <div class="col-xl-3 col-lg-2 col ps-0">
+                                <ul class="list-unstyled m-0 p-0 d-flex align-items-center justify-content-end iconBox">
+                                    <li class="iconLi ps-3"><a class="iconAnchor" href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#searchOffcanvas" aria-controls="searchOffcanvas"><img src="assets/img/searchLightBlue.svg" alt=""></a></li>
+                                    <li class="iconLi ps-3"><a class="iconAnchor" href="javascript:;"><img src="assets/img/wishlistLightBlue.svg" alt=""></a></li>
+                                    <li class="iconLi ps-3">
+                                        <a class="iconAnchor position-relative" href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+                                            <img src="assets/img/bagLightBlue.svg" alt="">
+                                            <span class="d-inline-flex position-absolute rounded-circle align-items-center justify-content-center cartValue">2</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                        <li class="LinkLi LinkLiSingleHover">
-                            <a class="LinkAnchor" href="javascript:;">Electronics</a>
-                            <div class="liHoverBox position-absolute top-100 start-0 w-100 shadow-sm bg-white">
-                                <div class="">
-                                    <div class="row mx-0">
-                                        <div class="col-12">
-                                            <ul class="list-unstyled m-0 p-0">
-                                                <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                                <li class="subCatLi py-2"><a class="subCatAnchor text-decoration-none" href="javascript:;">Sub Category</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="LinkLi"><a class="LinkAnchor" href="javascript:;">Home</a></li>
-                        <li class="LinkLi"><a class="LinkAnchor" href="javascript:;">Beauty</a></li>
-                        <li class="LinkLi"><a class="LinkAnchor" href="javascript:;">Grocery</a></li>
-                        <li class="LinkLi"><a class="LinkAnchor" href="javascript:;">Appliances</a></li>
-                    </ul>
-                </div> 
-                <div class="col-xl-3 col-lg-2 col">
-                    <ul class="list-unstyled m-0 p-0 d-flex align-items-center justify-content-end iconBox">
-                        <li class="iconLi ps-3"><a class="iconAnchor" href="javascript:;"><img src="assets/img/searchLightBlue.svg" alt=""></a></li>
-                        <li class="iconLi ps-3"><a class="iconAnchor" href="javascript:;"><img src="assets/img/wishlistLightBlue.svg" alt=""></a></li>
-                        <li class="iconLi ps-3">
-                            <a class="iconAnchor position-relative" href="javascript:;">
-                                <img src="assets/img/shopIcon.svg" alt="">
-                                <span class="d-inline-flex position-absolute rounded-circle align-items-center justify-content-center cartValue">0</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Header Ends Here -->
-
-    <!-- hero section starts here -->
-    <div class="container-fluid px-0 heroSection">
-        <div class="swiper mySwiper h-100">
-            <div class="swiper-wrapper heroSlideBox h-100">
-                <div class="swiper-slide heroSlide h-100" style="background-image: url(assets/img/bgShapeDark.svg);">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6">
-                                <img src="assets/img/hero2.webp" alt="">
-                            </div>
-                            <div class="col-6"></div>
                         </div>
                     </div>
                 </div>
+                <!-- Header Ends Here -->
+                <div class="bodyScrollPart">
+                    <!-- hero section starts here -->
+                    <div class="container-fluid px-0 heroSection">
+                        <div class="swiper mySwiper h-100">
+                            <div class="swiper-wrapper heroSlideBox h-100">
+                                <div class="swiper-slide heroSlide h-100" style="background-image: url(assets/img/bgShapeDark.svg);">
+                                    <div class="container h-100">
+                                        <div class="row align-items-center h-100">
+                                            <div class="col-6 h-100 d-flex align-items-end justify-content-center">
+                                                <img src="assets/img/hero2.webp" class="w-100 heroProImg" alt="">
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-12 Offer text-white">60% Discount</div>
+                                                    <div class="col-12 mainHead text-white">Winter Collection Has Arrived</div>
+                                                    <div class="col-12 subHead text-white">Best Winter wear collection in 2023</div>
+                                                    <div class="col-12 mt-1 mt-lg-3">
+                                                        <button class="btn btn-theme2 shadow-none text-white shopBtn">Shop Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide heroSlide h-100" style="background-image: url(assets/img/herobg3.webp);">
+                                    <div class="container h-100">
+                                        <div class="row align-items-center h-100">
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-12 Offer">Shoes of the Week</div>
+                                                    <div class="col-12 mainHead">Nike New Collection</div>
+                                                    <div class="col-12 subHead">Latest Nike Collection is out now</div>
+                                                    <div class="col-12 mt-1 mt-lg-3">
+                                                        <button class="btn btn-theme2 shadow-none text-white shopBtn">Shop Now</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 h-100 d-flex align-items-center justify-content-center">
+                                                <img src="assets/img/hero4.webp" class="w-100 heroProImg heroproShoes" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <!-- hero section ends here -->
+
+                    <!-- trending products starts here -->
+                    <div class="container-fluid py-5">
+                        <div class="container">
+                            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 g-4">
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <img src="assets/img/pro1.jpg" class="w-100 h-100 proImg" alt="">
+                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Sneakers & Keds</div>
+                                            <div class="productName">Women Colorblock Sneakers</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹500 <span>₹700</span></div>
+                                                <div class="productRating d-flex align-items-center">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <img src="assets/img/pro2.jpg" class="w-100 h-100 proImg" alt="">
+                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Women’s T-shirt</div>
+                                            <div class="productName">Cotton Lace Blouse</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹500 <span>₹700</span></div>
+                                                <div class="productRating d-flex align-items-center">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <img src="assets/img/pro3.jpg" class="w-100 h-100 proImg" alt="">
+                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Women’s Shorts</div>
+                                            <div class="productName">Mom High Waist Shorts</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹500 <span>₹700</span></div>
+                                                <div class="productRating d-flex align-items-center">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <img src="assets/img/pro5.jpg" class="w-100 h-100 proImg" alt="">
+                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Sportswear</div>
+                                            <div class="productName">Women Sports Jacket</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹500 <span>₹700</span></div>
+                                                <div class="productRating d-flex align-items-center">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <img src="assets/img/pro4.jpg" class="w-100 h-100 proImg" alt="">
+                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Men’s Sunglasses</div>
+                                            <div class="productName">Polarized Sunglasses</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹500 <span>₹700</span></div>
+                                                <div class="productRating d-flex align-items-center">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <img src="assets/img/pro6.jpg" class="w-100 h-100 proImg" alt="">
+                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Backpacks</div>
+                                            <div class="productName">TH Jeans City Backpack</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹500 <span>₹700</span></div>
+                                                <div class="productRating d-flex align-items-center">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <img src="assets/img/pro7.jpg" class="w-100 h-100 proImg" alt="">
+                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Kid's Toys</div>
+                                            <div class="productName">Soft Panda Teddy Bear</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹500 <span>₹700</span></div>
+                                                <div class="productRating d-flex align-items-center">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <img src="assets/img/pro8.jpg" class="w-100 h-100 proImg" alt="">
+                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Cosmetics</div>
+                                            <div class="productName">Metallic Lipstick (Crimson)</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹500 <span>₹700</span></div>
+                                                <div class="productRating d-flex align-items-center">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <img src="assets/img/pro9.jpg" class="w-100 h-100 proImg" alt="">
+                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Men’s Accessories</div>
+                                            <div class="productName">5-Pack Multicolor Bracelets</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹500 <span>₹700</span></div>
+                                                <div class="productRating d-flex align-items-center">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <img src="assets/img/pro10.jpg" class="w-100 h-100 proImg" alt="">
+                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Men’s Sandals</div>
+                                            <div class="productName">Soft Footbed Sandals</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹500 <span>₹700</span></div>
+                                                <div class="productRating d-flex align-items-center">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- web footer starts here -->
+                    <footer class="container-fluid bg-dark d-none d-lg-block">
+                        <div class="container">
+                            <div class="row row-cols-5 py-5">
+                                <div class="col">
+                                    <ul class="m-0 p-0 list-unstyled">
+                                        <li class="footerLink footerLogo">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="400px" height="82px" viewBox="0 0 400 82" enable-background="new 0 0 400 82" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"><text transform="matrix(1 0 0 1 69.7529 415.1504)"><tspan x="0" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="-3">A</tspan><tspan x="50.544" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="1">V</tspan><tspan x="105.983" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="3">ONE</tspan></text><g><path d="M54.766,67.227H27.107L22.81,80.229H0L28.54,2.543h25.014l28.43,77.687h-22.92L54.766,67.227z M49.367,50.918l-8.375-25.345l-8.485,25.345H49.367z"></path><path d="M100.386,2.212l17.631,56.199l17.521-56.199h23.03l-26.667,78.018h-27.878L77.356,2.212H100.386z"></path><path d="M225.401,6.124c6.062,3.416,10.835,8.173,14.326,14.27c3.488,6.099,5.234,12.968,5.234,20.607c0,7.641-1.764,14.509-5.291,20.605c-3.527,6.099-8.318,10.854-14.381,14.27c-6.059,3.417-12.725,5.125-19.998,5.125c-7.272,0-13.959-1.708-20.057-5.125c-6.099-3.416-10.908-8.171-14.435-14.27c-3.527-6.097-5.288-12.965-5.288-20.605c0-7.64,1.761-14.509,5.288-20.607c3.527-6.097,8.336-10.854,14.435-14.27c6.098-3.416,12.784-5.125,20.057-5.125C212.637,0.999,219.342,2.708,225.401,6.124z M192.289,26.399c-3.159,3.564-4.741,8.43-4.741,14.602c0,6.023,1.582,10.836,4.741,14.435c3.157,3.601,7.491,5.399,13.003,5.399c5.435,0,9.733-1.799,12.893-5.399c3.156-3.599,4.738-8.411,4.738-14.435c0-6.172-1.563-11.037-4.684-14.602c-3.125-3.563-7.438-5.345-12.947-5.345C199.78,21.055,195.446,22.837,192.289,26.399z"></path><path d="M332.231,80.229h-21.707l-28.648-43.526v43.526h-21.711V2.322h21.711l28.648,44.077V2.322h21.707V80.229z"></path><path d="M371.462,19.513v12.893h25.232v16.419h-25.232v14.104H400v17.301h-50.249V2.212H400v17.301H371.462z"></path></g></svg>
+                                        </li>
+                                        <li class="footerLink footerDesc mt-2 pe-4">
+                                            55 Gallaxy Enque, 2568 steet, 23568 NY
+                                        </li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor"><span>Phone:</span>(440) 000 000 0000</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor"><span>Email:</span>avon@test.com</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <div class="footerHeading">INFORMATION</div>
+                                    <ul class="m-0 p-0 list-unstyled">
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">About Us</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Contact Us</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Career</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">My Account</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Orders and Returns</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <div class="footerHeading">QUICK SHOP</div>
+                                    <ul class="m-0 p-0 list-unstyled">
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Fashion</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Furniture</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Home Decor</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Shoes</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <div class="footerHeading">CUSTOMER SERVICES</div>
+                                    <ul class="m-0 p-0 list-unstyled">
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Help & FAQs</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Returns Policy</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Terms & Conditions</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Privacy Policy</a></li>
+                                        <li class="footerLink"><a href="javascript" class="footerAnchor">Support Center</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <div class="footerHeading">NEWSLETTER</div>
+                                    <ul class="m-0 p-0 list-unstyled">
+                                        <li class="footerLink footerDesc">
+                                            Enter your email to receive daily news and get 20% off coupon for all items.
+                                        </li>
+                                        <li class="footerLink footerInput mt-3">
+                                            <form class="position-relative">
+                                                <input type="text" class="form-control shadow-none" placeholder="Your Email">
+                                                <button class="btn d-flex align-items-center justify-content-center shadow-none top-0 end-0 position-absolute sendBtn">
+                                                    <img src="assets/img/sendmail.png" alt="">
+                                                </button>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row pb-3 align-items-center">
+                                <div class="col footerLink footerDesc">
+                                    © <span id="footerYear"></span> All Rights Reserved
+                                </div>
+                                <div class="col-auto">
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn downloadBtn appleDownload">
+                                            <span class="subtitle">Download on the</span>
+                                            <span class="title">App Store</span>
+                                        </button>
+                                        <button class="btn downloadBtn playDownload ms-3">
+                                            <span class="subtitle">Download on the</span>
+                                            <span class="title">Play Store</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!--web  footer ends here -->
+                </div>
+                <!--mobile footer starts here -->
+                <div class="mobileFooter d-lg-none">
+                    <div class="row row-cols-4">
+                        <div class="col bottomBarLink active">
+                            <img src="assets/img/homeLightBlue.svg" alt="">
+                            <div class="BottomBarText">Home</div>
+                        </div>
+                        <div class="col bottomBarLink">
+                            <img src="assets/img/categoriesLightBlue.svg" alt="">
+                            <div class="BottomBarText">Category</div>
+                        </div>
+                        <div class="col bottomBarLink">
+                            <img src="assets/img/notificationLightBlue.svg" alt="">
+                            <div class="BottomBarText">Notification</div>
+                        </div>
+                        <div class="col bottomBarLink">
+                            <img src="assets/img/bagLightBlue.svg" alt="">
+                            <div class="BottomBarText">Cart</div>
+                        </div>
+                    </div>
+                </div>
+                <!--mobile footer ends here -->
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
         </div>
     </div>
-    <!-- footer starts here -->
-    <footer class="container-fluid bg-dark py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="footerHeading">Information</div>
-                    <ul class="m-0 p-0 list-unstyled">
-                        <li class="footerLink"><a href="javascript" class="footerAnchor">About Us</a></li>
-                        <li class="footerLink"><a href="javascript" class="footerAnchor">Contact Us</a></li>
-                        <li class="footerLink"><a href="javascript" class="footerAnchor">Career</a></li>
-                        <li class="footerLink"><a href="javascript" class="footerAnchor">My Account</a></li>
-                        <li class="footerLink"><a href="javascript" class="footerAnchor">Orders and Returns</a></li>
-                    </ul>
-                </div>
+    
+
+  
+
+<!-- search offcanvas -->
+
+<div class="offcanvas offcanvas-top searchOffcanvas" tabindex="-1" id="searchOffcanvas" aria-labelledby="searchOffcanvasLabel">
+    <div class="offcanvas-header px-md-3 px-lg-5">
+        <div class="title" id="searchOffcanvasLabel">What are you looking for?</div>
+        <button type="button" class="closeBtn shadow-none" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="assets/img/crossLightBlue.svg" alt="">
+        </button>
+    </div>
+    <div class="offcanvas-body px-md-3 px-lg-5 py-2">
+        <div class="position-relative">
+            <input type="text" class="form-control shadow-none w-100 searchInput" placeholder="Search for products, brands and more">
+            <button class="btn shadow-none position-absolute top-50 searchBtn">
+                <img src="assets/img/searchLightBlue.svg" alt="" class="">
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- cart offcanvas -->
+<div class="offcanvas offcanvas-end cartOffcanvas" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+    <div class="offcanvas-header border-bottom">
+        <div class="title" id="cartOffcanvasLabel">Your Cart</div>
+        <button type="button" class="closeBtn shadow-none" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="assets/img/crossLightBlue.svg" alt="">
+        </button>
+    </div>
+    <div class="offcanvas-body py-0">
+        <row class="mx-0">
+            <div class="col-12 cartCard">
+                <a href="javascript:;" class="row mx-0 cartCardInner text-decoration-none">
+                    <div class="col-auto ps-0">
+                        <div class="cartProImg">
+                            <img src="assets/img/cp-1.jpg" alt="" class="w-100 h-100">
+                        </div>
+                    </div>
+                    <div class="col px-0">
+                        <div class="row">
+                            <div class="col cartProName">Women black Sneakers</div>
+                            <div class="col-auto cartRemoveImg">
+                                <img src="assets/img/crossLightBlue.svg" alt="">
+                            </div>
+                            <div class="col-12 cartProColor my-1">Black & White</div>
+                            <div class="col cartProPrice">₹500</div>
+                            <div class="col-auto cartPlusMinus d-flex">
+                                <span class="decrementBtn">-</span>
+                                <span class="valueBox">1</span>
+                                <span class="incrementBtn">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 cartCard">
+                <a href="javascript:;" class="row mx-0 cartCardInner text-decoration-none">
+                    <div class="col-auto ps-0">
+                        <div class="cartProImg">
+                            <img src="assets/img/cp-1.jpg" alt="" class="w-100 h-100">
+                        </div>
+                    </div>
+                    <div class="col px-0">
+                        <div class="row">
+                            <div class="col cartProName">Women black Sneakers</div>
+                            <div class="col-auto cartRemoveImg">
+                                <img src="assets/img/crossLightBlue.svg" alt="">
+                            </div>
+                            <div class="col-12 cartProColor my-1">Black & White</div>
+                            <div class="col cartProPrice">₹500</div>
+                            <div class="col-auto cartPlusMinus d-flex">
+                                <span class="decrementBtn">-</span>
+                                <span class="valueBox">1</span>
+                                <span class="incrementBtn">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </row>
+    </div>
+    <div class="offcanvas-footer p-3 border-top">
+        <div class="row">
+            <div class="col subtotal">SubTotal:</div>
+            <div class="col-auto subtotalValue">₹1000</div>
+            <div class="col-12 mt-2">
+                <button class="btn btn-theme1 addToCartBtn btnStyle1 w-100">View Cart</button>
             </div>
         </div>
-    </footer>
+    </div>
+</div>
 
     <!-- Bootstrap Js -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -383,6 +925,43 @@
     <!-- Custom Js -->
     <script src="assets/js/index.js"></script>
     <script>
+        let footerYear = document.querySelector('#footerYear');
+        footerYear.innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+        // let decrementBtns = document.querySelectorAll('.decrementBtn');
+        // let valueBoxs = document.querySelectorAll('.valueBox');
+        // let incrementBtns = document.querySelectorAll('.incrementBtn');
+        // let count = 0;
+
+        // valueBoxs.forEach(valueBox => {
+        //     valueBox.innerHTML = count;
+        // })
+
+        // decrementBtns.forEach(decrementBtn => {
+        //     decrementBtn.addEventListener('click', (e)=> {
+        //         e.currentTarget.nextSibling.innerHTML = count-1
+        //     })
+        // })
+
+        // incrementBtns.forEach(incrementBtn => {
+        //     incrementBtn.addEventListener('click', (e)=> {
+        //         e.currentTarget.parentSibling.innerHTML = count+1
+        //     })
+        // })
+
+    </script>
+    <script>
+        const cartButtons = document.querySelectorAll('.cart-button');
+
+cartButtons.forEach(button => {
+	button.addEventListener('click', cartClick);
+});
+
+function cartClick() {
+	let button = this;
+	button.classList.add('clicked');
+}
     </script>
 </body>
 </html>
