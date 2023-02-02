@@ -32,7 +32,7 @@
 
     <!-- Dynamic Meta Tags (Should change for every page) -->
 
-    <title>Document</title>
+    <title>Avone</title>
 
         <!-- Required meta tags -->
     <meta name="title" content="Title here" />
@@ -347,7 +347,7 @@
                             <div class="swiper-wrapper heroSlideBox h-100">
                                 <div class="swiper-slide heroSlide h-100" style="background-image: url(assets/img/bgShapeDark.svg);">
                                     <div class="container h-100">
-                                        <div class="row align-items-center h-100">
+                                        <div class="row mx-0 align-items-center h-100">
                                             <div class="col-6 h-100 d-flex align-items-end justify-content-center">
                                                 <img src="assets/img/hero2.webp" class="w-100 heroProImg" alt="">
                                             </div>
@@ -366,7 +366,7 @@
                                 </div>
                                 <div class="swiper-slide heroSlide h-100" style="background-image: url(assets/img/herobg3.webp);">
                                     <div class="container h-100">
-                                        <div class="row align-items-center h-100">
+                                        <div class="row mx-0 align-items-center h-100">
                                             <div class="col-6">
                                                 <div class="row">
                                                     <div class="col-12 Offer">Shoes of the Week</div>
@@ -390,15 +390,21 @@
                     <!-- hero section ends here -->
 
                     <!-- trending products starts here -->
-                    <div class="container-fluid py-5">
+                    <div class="container-fluid py-4  py-sm-5">
                         <div class="container">
-                            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 g-4">
+                            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 g-3 g-sm-4">
                                 <div class="col">
                                     <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
                                         <div class="col-12 productImg">
-                                            <img src="assets/img/pro1.jpg" class="w-100 h-100 proImg" alt="">
-                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
-                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro1.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-12 prodetailBox">
@@ -418,8 +424,8 @@
                                                 <button class="cart-button btn btn-theme1 text-white">
                                                     <span class="add-to-cart">Add to cart</span>
                                                     <span class="added">Added</span>
-                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
-                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
                                                 </button>
                                             </div>
                                         </div>
@@ -428,9 +434,15 @@
                                 <div class="col">
                                     <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
                                         <div class="col-12 productImg">
-                                            <img src="assets/img/pro2.jpg" class="w-100 h-100 proImg" alt="">
-                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
-                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro2.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-12 prodetailBox">
@@ -450,8 +462,8 @@
                                                 <button class="cart-button btn btn-theme1 text-white">
                                                     <span class="add-to-cart">Add to cart</span>
                                                     <span class="added">Added</span>
-                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
-                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
                                                 </button>
                                             </div>
                                         </div>
@@ -460,9 +472,15 @@
                                 <div class="col">
                                     <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
                                         <div class="col-12 productImg">
-                                            <img src="assets/img/pro3.jpg" class="w-100 h-100 proImg" alt="">
-                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
-                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro3.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-12 prodetailBox">
@@ -482,8 +500,8 @@
                                                 <button class="cart-button btn btn-theme1 text-white">
                                                     <span class="add-to-cart">Add to cart</span>
                                                     <span class="added">Added</span>
-                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
-                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
                                                 </button>
                                             </div>
                                         </div>
@@ -492,9 +510,15 @@
                                 <div class="col">
                                     <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
                                         <div class="col-12 productImg">
-                                            <img src="assets/img/pro5.jpg" class="w-100 h-100 proImg" alt="">
-                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
-                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro5.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-12 prodetailBox">
@@ -514,8 +538,8 @@
                                                 <button class="cart-button btn btn-theme1 text-white">
                                                     <span class="add-to-cart">Add to cart</span>
                                                     <span class="added">Added</span>
-                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
-                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
                                                 </button>
                                             </div>
                                         </div>
@@ -524,9 +548,15 @@
                                 <div class="col">
                                     <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
                                         <div class="col-12 productImg">
-                                            <img src="assets/img/pro4.jpg" class="w-100 h-100 proImg" alt="">
-                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
-                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro4.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-12 prodetailBox">
@@ -546,8 +576,8 @@
                                                 <button class="cart-button btn btn-theme1 text-white">
                                                     <span class="add-to-cart">Add to cart</span>
                                                     <span class="added">Added</span>
-                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
-                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
                                                 </button>
                                             </div>
                                         </div>
@@ -556,9 +586,15 @@
                                 <div class="col">
                                     <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
                                         <div class="col-12 productImg">
-                                            <img src="assets/img/pro6.jpg" class="w-100 h-100 proImg" alt="">
-                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
-                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro6.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-12 prodetailBox">
@@ -578,8 +614,8 @@
                                                 <button class="cart-button btn btn-theme1 text-white">
                                                     <span class="add-to-cart">Add to cart</span>
                                                     <span class="added">Added</span>
-                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
-                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
                                                 </button>
                                             </div>
                                         </div>
@@ -588,9 +624,15 @@
                                 <div class="col">
                                     <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
                                         <div class="col-12 productImg">
-                                            <img src="assets/img/pro7.jpg" class="w-100 h-100 proImg" alt="">
-                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
-                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro7.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-12 prodetailBox">
@@ -610,8 +652,8 @@
                                                 <button class="cart-button btn btn-theme1 text-white">
                                                     <span class="add-to-cart">Add to cart</span>
                                                     <span class="added">Added</span>
-                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
-                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
                                                 </button>
                                             </div>
                                         </div>
@@ -620,9 +662,15 @@
                                 <div class="col">
                                     <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
                                         <div class="col-12 productImg">
-                                            <img src="assets/img/pro8.jpg" class="w-100 h-100 proImg" alt="">
-                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
-                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro8.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-12 prodetailBox">
@@ -642,8 +690,8 @@
                                                 <button class="cart-button btn btn-theme1 text-white">
                                                     <span class="add-to-cart">Add to cart</span>
                                                     <span class="added">Added</span>
-                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
-                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
                                                 </button>
                                             </div>
                                         </div>
@@ -652,9 +700,15 @@
                                 <div class="col">
                                     <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
                                         <div class="col-12 productImg">
-                                            <img src="assets/img/pro9.jpg" class="w-100 h-100 proImg" alt="">
-                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
-                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro9.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-12 prodetailBox">
@@ -674,8 +728,8 @@
                                                 <button class="cart-button btn btn-theme1 text-white">
                                                     <span class="add-to-cart">Add to cart</span>
                                                     <span class="added">Added</span>
-                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
-                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
                                                 </button>
                                             </div>
                                         </div>
@@ -684,9 +738,15 @@
                                 <div class="col">
                                     <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
                                         <div class="col-12 productImg">
-                                            <img src="assets/img/pro10.jpg" class="w-100 h-100 proImg" alt="">
-                                            <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
-                                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro10.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-12 prodetailBox">
@@ -706,8 +766,8 @@
                                                 <button class="cart-button btn btn-theme1 text-white">
                                                     <span class="add-to-cart">Add to cart</span>
                                                     <span class="added">Added</span>
-                                                    <img src="assets/img/categoriesLightBlue.svg" class="shoppingCartImg" alt="">
-                                                    <img src="assets/img/bagLightBlue.svg" class="shoppingBag" alt="">
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
                                                 </button>
                                             </div>
                                         </div>
@@ -861,17 +921,24 @@
                 <a href="javascript:;" class="row mx-0 cartCardInner text-decoration-none">
                     <div class="col-auto ps-0">
                         <div class="cartProImg">
-                            <img src="assets/img/cp-1.jpg" alt="" class="w-100 h-100">
+                            <img src="assets/img/pro1.jpg" alt="" class="w-100 h-100">
                         </div>
                     </div>
                     <div class="col px-0">
                         <div class="row">
-                            <div class="col cartProName">Women black Sneakers</div>
+                            <div class="col cartProName align-items-center">Women Colorblock Sneakers</div>
                             <div class="col-auto cartRemoveImg">
                                 <img src="assets/img/crossLightBlue.svg" alt="">
                             </div>
-                            <div class="col-12 cartProColor my-1">Black & White</div>
-                            <div class="col cartProPrice">₹500</div>
+                            <div class="productRating d-flex align-items-center mb-1">
+                                <img src="assets/img/star.png" alt="">
+                                <img src="assets/img/star.png" alt="">
+                                <img src="assets/img/star.png" alt="">
+                                <img src="assets/img/star.png" alt="">
+                                <img src="assets/img/star.png" alt="">
+                            </div>
+                            <div class="col-12 cartProColor">Sneakers & Keds</div>
+                            <div class="col cartProPrice">₹500 <span>₹700</span></div>
                             <div class="col-auto cartPlusMinus d-flex">
                                 <span class="decrementBtn">-</span>
                                 <span class="valueBox">1</span>
@@ -885,17 +952,24 @@
                 <a href="javascript:;" class="row mx-0 cartCardInner text-decoration-none">
                     <div class="col-auto ps-0">
                         <div class="cartProImg">
-                            <img src="assets/img/cp-1.jpg" alt="" class="w-100 h-100">
+                            <img src="assets/img/pro2.jpg" alt="" class="w-100 h-100">
                         </div>
                     </div>
                     <div class="col px-0">
-                        <div class="row">
-                            <div class="col cartProName">Women black Sneakers</div>
+                        <div class="row align-items-center">
+                            <div class="col cartProName">Cotton Lace Blouse</div>
                             <div class="col-auto cartRemoveImg">
                                 <img src="assets/img/crossLightBlue.svg" alt="">
                             </div>
-                            <div class="col-12 cartProColor my-1">Black & White</div>
-                            <div class="col cartProPrice">₹500</div>
+                            <div class="productRating d-flex align-items-center mb-1">
+                                <img src="assets/img/star.png" alt="">
+                                <img src="assets/img/star.png" alt="">
+                                <img src="assets/img/star.png" alt="">
+                                <img src="assets/img/star.png" alt="">
+                                <img src="assets/img/star.png" alt="">
+                            </div>
+                            <div class="col-12 cartProColor">Women’s T-shirt</div>
+                            <div class="col cartProPrice">₹500 <span>₹700</span></div>
                             <div class="col-auto cartPlusMinus d-flex">
                                 <span class="decrementBtn">-</span>
                                 <span class="valueBox">1</span>
@@ -914,6 +988,152 @@
             <div class="col-12 mt-2">
                 <button class="btn btn-theme1 addToCartBtn btnStyle1 w-100">View Cart</button>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Preview Modal -->
+<div class="modal fade productPreviewModal" id="productPrivew" data-bs-backdrop="static" tabindex="-1" aria-labelledby="productPrivewLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="title" id="productPrivewLabel">Your Cart</div>
+                <button type="button" class="closeBtn shadow-none" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/img/crossLightBlue.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row mx-0">
+                    <div class="col-lg-6 px-0 pe-md-2">
+                        <div class="position-relative">
+                            <div class="swiper productPrevCarousel">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/thumb1.jpg" class="w-100"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/thumb2.jpg"class="w-100" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/thumb3.jpg" class="w-100"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/thumb4.jpg"class="w-100" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/thumb5.jpg" class="w-100"/>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/thumb6.jpg" class="w-100"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbCarouselWrapper">
+                                <div thumbsSlider="" class="swiper productthumbCarousel">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/thumb1.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/thumb2.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/thumb3.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/thumb4.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/thumb5.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/thumb6.jpg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 px-0 ps-md-2">
+                        <div class="row proDetailSide">
+                            <div class="col-12 proDetail">Croock</div>
+                            <div class="col-12 proName mt-1">Martha Knit Top</div>
+                            <div class="col-12 proAvability available mt-1">In Stock</div>
+                            <div class="col-12 proPrice mt-1">₹3000.00</div>
+                            <div class="col-12 proDetail mt-1">A little crisp, a little sunny, warm enough to skip a coat, just cool enough to wrap great cashmere around is this asymmetrical jumper. With a chic hue, this one to skip a coat, just cool enough to wrap great cashmere around is this asymmetrical jumper. With a chic hue,</div>
+                            <div class="col-12 proColor mt-3">
+                                <div class="row mx-0">
+                                    <div class="col-12 px-0 proDetail2 mb-1">Available Color:</div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0">
+                                            <div class="col-auto ps-0">
+                                                <input type="radio" name="color" id="color1" class="colorInput d-none">
+                                                <label class="colorLabel" for="color1"> <span class="d-inline-block h-100 w-100 bg-danger"></span></label>
+                                            </div>
+                                            <div class="col-auto ps-0">
+                                                <input type="radio" name="color" id="color2" class="colorInput d-none">
+                                                <label class="colorLabel" for="color2"><span class="d-inline-block h-100 w-100 bg-primary"></span></label>
+                                            </div>
+                                            <div class="col-auto ps-0">
+                                                <input type="radio" name="color" id="color3" class="colorInput d-none">
+                                                <label class="colorLabel" for="color3"><span class="d-inline-block h-100 w-100 bg-dark"></span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-12 proColor mt-3">
+                                <div class="row mx-0">
+                                    <div class="col-12 px-0 proDetail2 mb-1">Available Size:</div>
+                                    <div class="col-12 px-0">
+                                        <div class="row mx-0">
+                                            <div class="col-auto ps-0">
+                                                <input type="radio" name="size" id="size1" class="colorInput d-none">
+                                                <label class="colorLabel" for="size1"><span class="d-inline-block h-100 w-100">S</span></label>
+                                            </div>
+                                            <div class="col-auto ps-0">
+                                                <input type="radio" name="size" id="size2" class="colorInput d-none">
+                                                <label class="colorLabel" for="size2"> <span class="d-inline-block h-100 w-100">M</span></label>
+                                            </div>
+                                            <div class="col-auto ps-0">
+                                                <input type="radio" name="size" id="size3" class="colorInput d-none">
+                                                <label class="colorLabel" for="size3"><span class="d-inline-block h-100 w-100">L</span></label>
+                                            </div>
+                                            <div class="col-auto ps-0">
+                                                <input type="radio" name="size" id="size4" class="colorInput d-none">
+                                                <label class="colorLabel" for="size4"><span class="d-inline-block h-100 w-100">XL</span></label>
+                                            </div>
+                                            <div class="col-auto ps-0">
+                                                <input type="radio" name="size" id="size5" class="colorInput d-none">
+                                                <label class="colorLabel" for="size5"><span class="d-inline-block h-100 w-100">XXL</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row mx-0">
+                                    <div class="col-auto px-0">
+
+                                    </div>
+                                    <div class="col pe-0">
+                                        <button class="cart-button btn btn-theme1 text-white">
+                                            <span class="add-to-cart">Add to cart</span>
+                                            <span class="added">Added</span>
+                                            <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                            <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
         </div>
     </div>
 </div>

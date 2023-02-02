@@ -33,3 +33,25 @@ var swiper = new Swiper(".mySwiper", {
       type: "fraction",
     },
   });
+
+
+  // product preview carousel
+
+    var swiper = new Swiper(".productthumbCarousel", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".productPrevCarousel", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });

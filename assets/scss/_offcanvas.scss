@@ -55,84 +55,709 @@
             }
         }
     }
+    & .offcanvas-body {
+        .cartCard {
+            & .cartCardInner {
+                border-bottom: 1px solid $gray-200;
+                padding: 16px 0;
+                & .cartProImg {
+                    height: 90px;
+                    width: 90px;
+                    border-radius: 4px;
+                    overflow: hidden;
+                    & img {
+                        object-fit: cover;
+            
+                    }
+                }
+                & .cartProName {
+                    font-size: 0.875rem;
+                    color: $gray-800;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                & .cartRemoveImg {
+                    & img {
+                        filter: brightness(0.5);
+                        height: 10px;
+                    }
+                }
+                & .cartProColor {
+                    font-size: 0.75rem;
+                    color: $gray-600;
+                }
+                & .productRating {
+                    & img {
+                        height: 12px;
+                    }
+                }
+                & .cartProPrice {
+                    font-size: 0.85rem;
+                    font-weight: 600;
+                    color: $theme1;
+                    & span {
+                        font-size: 0.7rem !important;
+                        color: $gray-600;
+                        text-decoration: line-through;
+                    }
+                }
+                & .cartPlusMinus {
+                    & span {
+                        display: inline-flex;
+                        height: 22px;
+                        width: 22px;
+                        color: $gray-900;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 13px;
+                        border-top: 1px solid $gray-300;
+                        border-bottom: 1px solid $gray-300;
+                        &:first-child {
+                            border-left: 1px solid $gray-300;
+                            border-right: 1px solid $gray-300;
+                            border-radius: 3px 0 0 3px;
+                            cursor: pointer;
+                        }
+                        &:last-child {
+                            border-left: 1px solid $gray-300;
+                            border-right: 1px solid $gray-300;
+                            border-radius: 0 3px 3px 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
     & .offcanvas-footer {
         & .subtotal {
-            font-size: 14px;
+            font-size: 12px;
             color: $gray-900;
             font-weight: 500;
             text-transform: uppercase;
         }
         & .subtotalValue {
-            font-size: 14px;
+            font-size: 12px;
             color: $gray-900;
             font-weight: 500;
         }
         & .addToCartBtn {
-            height: 44px;
+            height: 42px;
         }
     }
 }
 
-.cartCard {
-    & .cartCardInner {
-        border-bottom: 1px solid $gray-200;
-        padding: 16px 0;
-        & .cartProImg {
-            height: 90px;
-            width: 90px;
-            border-radius: 4px;
-            overflow: hidden;
+
+
+@mixin cartOffcanvas-mixin-min-sm(){
+    .cartOffcanvas {
+    & .offcanvas-header {
+        & .title {
+        }
+        & .closeBtn {
             & img {
-                object-fit: cover;
-    
             }
         }
-        & .cartProName {
-            font-size: 15px;
-            color: $gray-900;display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        & .cartRemoveImg {
-            & img {
-                filter: brightness(0.5);
-                height: 10px;
-            }
-        }
-        & .cartProColor {
-            font-size: 13px;
-            color: $gray-900;
-        }
-        & .cartProPrice {
-            font-size: 13px;
-            color: $gray-900;
-        }
-        & .cartPlusMinus {
-            & span {
-                display: inline-flex;
-                height: 22px;
-                width: 22px;
-                color: $gray-900;
-                align-items: center;
-                justify-content: center;
-                font-size: 13px;
-                border-top: 1px solid $gray-300;
-                border-bottom: 1px solid $gray-300;
-                &:first-child {
-                    border-left: 1px solid $gray-300;
-                    border-right: 1px solid $gray-300;
-                    border-radius: 3px 0 0 3px;
-                    cursor: pointer;
+    }
+    & .offcanvas-body {
+        .cartCard {
+            & .cartCardInner {
+                & .cartProImg {
+                    & img {
+            
+                    }
                 }
-                &:last-child {
-                    border-left: 1px solid $gray-300;
-                    border-right: 1px solid $gray-300;
-                    border-radius: 0 3px 3px 0;
-                    cursor: pointer;
+                & .cartProName {
+                }
+                & .cartRemoveImg {
+                    & img {
+                    }
+                }
+                & .cartProColor {
+                }
+                & .productRating {
+                    & img {
+                    }
+                }
+                & .cartProPrice {
+                    & span {
+                    }
+                }
+                & .cartPlusMinus {
+                    & span {
+                        &:first-child {
+                        }
+                        &:last-child {
+                        }
+                    }
                 }
             }
         }
     }
+    & .offcanvas-footer {
+        & .subtotal {
+        }
+        & .subtotalValue {
+        }
+        & .addToCartBtn {
+        }
+    }
 }
+};
+@mixin cartOffcanvas-mixin-min-md(){
+    .cartOffcanvas {
+    & .offcanvas-header {
+        & .title {
+        }
+        & .closeBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        .cartCard {
+            & .cartCardInner {
+                & .cartProImg {
+                    & img {
+            
+                    }
+                }
+                & .cartProName {
+                }
+                & .cartRemoveImg {
+                    & img {
+                    }
+                }
+                & .cartProColor {
+                }
+                & .productRating {
+                    & img {
+                    }
+                }
+                & .cartProPrice {
+                    & span {
+                    }
+                }
+                & .cartPlusMinus {
+                    & span {
+                        &:first-child {
+                        }
+                        &:last-child {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .subtotal {
+        }
+        & .subtotalValue {
+        }
+        & .addToCartBtn {
+        }
+    }
+}
+};
+@mixin cartOffcanvas-mixin-min-lg(){
+    .cartOffcanvas {
+    & .offcanvas-header {
+        & .title {
+        }
+        & .closeBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        .cartCard {
+            & .cartCardInner {
+                & .cartProImg {
+                    & img {
+            
+                    }
+                }
+                & .cartProName {
+                }
+                & .cartRemoveImg {
+                    & img {
+                    }
+                }
+                & .cartProColor {
+                }
+                & .productRating {
+                    & img {
+                    }
+                }
+                & .cartProPrice {
+                    & span {
+                    }
+                }
+                & .cartPlusMinus {
+                    & span {
+                        &:first-child {
+                        }
+                        &:last-child {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .subtotal {
+        }
+        & .subtotalValue {
+        }
+        & .addToCartBtn {
+        }
+    }
+}
+};
+@mixin cartOffcanvas-mixin-min-xl(){
+    .cartOffcanvas {
+    & .offcanvas-header {
+        & .title {
+        }
+        & .closeBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        .cartCard {
+            & .cartCardInner {
+                & .cartProImg {
+                    & img {
+            
+                    }
+                }
+                & .cartProName {
+                }
+                & .cartRemoveImg {
+                    & img {
+                    }
+                }
+                & .cartProColor {
+                }
+                & .productRating {
+                    & img {
+                    }
+                }
+                & .cartProPrice {
+                    & span {
+                    }
+                }
+                & .cartPlusMinus {
+                    & span {
+                        &:first-child {
+                        }
+                        &:last-child {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .subtotal {
+        }
+        & .subtotalValue {
+        }
+        & .addToCartBtn {
+        }
+    }
+}
+};
+@mixin cartOffcanvas-mixin-min-xxl(){
+    .cartOffcanvas {
+    & .offcanvas-header {
+        & .title {
+        }
+        & .closeBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        .cartCard {
+            & .cartCardInner {
+                & .cartProImg {
+                    & img {
+            
+                    }
+                }
+                & .cartProName {
+                }
+                & .cartRemoveImg {
+                    & img {
+                    }
+                }
+                & .cartProColor {
+                }
+                & .productRating {
+                    & img {
+                    }
+                }
+                & .cartProPrice {
+                    & span {
+                    }
+                }
+                & .cartPlusMinus {
+                    & span {
+                        &:first-child {
+                        }
+                        &:last-child {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .subtotal {
+        }
+        & .subtotalValue {
+        }
+        & .addToCartBtn {
+        }
+    }
+}
+};
+@mixin cartOffcanvas-mixin-max-xl(){
+    .cartOffcanvas {
+    & .offcanvas-header {
+        & .title {
+        }
+        & .closeBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        .cartCard {
+            & .cartCardInner {
+                & .cartProImg {
+                    & img {
+            
+                    }
+                }
+                & .cartProName {
+                }
+                & .cartRemoveImg {
+                    & img {
+                    }
+                }
+                & .cartProColor {
+                }
+                & .productRating {
+                    & img {
+                    }
+                }
+                & .cartProPrice {
+                    & span {
+                    }
+                }
+                & .cartPlusMinus {
+                    & span {
+                        &:first-child {
+                        }
+                        &:last-child {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .subtotal {
+        }
+        & .subtotalValue {
+        }
+        & .addToCartBtn {
+        }
+    }
+}
+};
+@mixin cartOffcanvas-mixin-max-1300(){
+    .cartOffcanvas {
+    & .offcanvas-header {
+        & .title {
+        }
+        & .closeBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        .cartCard {
+            & .cartCardInner {
+                & .cartProImg {
+                    & img {
+            
+                    }
+                }
+                & .cartProName {
+                }
+                & .cartRemoveImg {
+                    & img {
+                    }
+                }
+                & .cartProColor {
+                }
+                & .productRating {
+                    & img {
+                    }
+                }
+                & .cartProPrice {
+                    & span {
+                    }
+                }
+                & .cartPlusMinus {
+                    & span {
+                        &:first-child {
+                        }
+                        &:last-child {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .subtotal {
+        }
+        & .subtotalValue {
+        }
+        & .addToCartBtn {
+        }
+    }
+}
+};
+@mixin cartOffcanvas-mixin-max-lg(){
+    .cartOffcanvas {
+    & .offcanvas-header {
+        & .title {
+        }
+        & .closeBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        .cartCard {
+            & .cartCardInner {
+                & .cartProImg {
+                    & img {
+            
+                    }
+                }
+                & .cartProName {
+                }
+                & .cartRemoveImg {
+                    & img {
+                    }
+                }
+                & .cartProColor {
+                }
+                & .productRating {
+                    & img {
+                    }
+                }
+                & .cartProPrice {
+                    & span {
+                    }
+                }
+                & .cartPlusMinus {
+                    & span {
+                        &:first-child {
+                        }
+                        &:last-child {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .subtotal {
+        }
+        & .subtotalValue {
+        }
+        & .addToCartBtn {
+        }
+    }
+}
+};
+@mixin cartOffcanvas-mixin-max-md(){
+    .cartOffcanvas {
+    & .offcanvas-header {
+        & .title {
+        }
+        & .closeBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        .cartCard {
+            & .cartCardInner {
+                & .cartProImg {
+                    & img {
+            
+                    }
+                }
+                & .cartProName {
+                }
+                & .cartRemoveImg {
+                    & img {
+                    }
+                }
+                & .cartProColor {
+                }
+                & .productRating {
+                    & img {
+                    }
+                }
+                & .cartProPrice {
+                    & span {
+                    }
+                }
+                & .cartPlusMinus {
+                    & span {
+                        &:first-child {
+                        }
+                        &:last-child {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .subtotal {
+        }
+        & .subtotalValue {
+        }
+        & .addToCartBtn {
+        }
+    }
+}
+};
+@mixin cartOffcanvas-mixin-max-sm(){
+    .cartOffcanvas {
+    & .offcanvas-header {
+        & .title {
+        }
+        & .closeBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        .cartCard {
+            & .cartCardInner {
+                & .cartProImg {
+                    & img {
+            
+                    }
+                }
+                & .cartProName {
+                }
+                & .cartRemoveImg {
+                    & img {
+                    }
+                }
+                & .cartProColor {
+                }
+                & .productRating {
+                    & img {
+                    }
+                }
+                & .cartProPrice {
+                    & span {
+                    }
+                }
+                & .cartPlusMinus {
+                    & span {
+                        &:first-child {
+                        }
+                        &:last-child {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .subtotal {
+        }
+        & .subtotalValue {
+        }
+        & .addToCartBtn {
+        }
+    }
+}
+};
+@mixin cartOffcanvas-mixin-max-xs(){
+    .cartOffcanvas {
+        width: 100% !important;
+    & .offcanvas-header {
+        & .title {
+        }
+        & .closeBtn {
+            & img {
+            }
+        }
+    }
+    & .offcanvas-body {
+        .cartCard {
+            & .cartCardInner {
+                & .cartProImg {
+                    & img {
+            
+                    }
+                }
+                & .cartProName {
+                }
+                & .cartRemoveImg {
+                    & img {
+                    }
+                }
+                & .cartProColor {
+                }
+                & .productRating {
+                    & img {
+                    }
+                }
+                & .cartProPrice {
+                    & span {
+                    }
+                }
+                & .cartPlusMinus {
+                    & span {
+                        &:first-child {
+                        }
+                        &:last-child {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .offcanvas-footer {
+        & .subtotal {
+        }
+        & .subtotalValue {
+        }
+        & .addToCartBtn {
+        }
+    }
+}
+};
+
+
+
