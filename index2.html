@@ -65,12 +65,15 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body class="vh-100 overflow-hidden">
+        <div class="loader active">
+            <span></span>
+        </div>
     <div class="bodyWrapper">
         <div class="bodyWrapperInner h-100">
             <div class="bosyWrapperMain h-100">
                 <!-- Header Starts Here -->
                 <div class="container-fluid Header">
-                    <div class="container position-relative">
+                    <div class="container px-0 px-lg-2 position-relative">
                         <div class="row mx-0 align-items-center justify-content-between">
                             <div class="col-xl-3 col-lg-2 col-auto logoBox px-0">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="400px" height="82px" viewBox="0 0 400 82" enable-background="new 0 0 400 82" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"><text transform="matrix(1 0 0 1 69.7529 415.1504)"><tspan x="0" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="-3">A</tspan><tspan x="50.544" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="1">V</tspan><tspan x="105.983" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="3">ONE</tspan></text><g><path d="M54.766,67.227H27.107L22.81,80.229H0L28.54,2.543h25.014l28.43,77.687h-22.92L54.766,67.227z M49.367,50.918l-8.375-25.345l-8.485,25.345H49.367z"></path><path d="M100.386,2.212l17.631,56.199l17.521-56.199h23.03l-26.667,78.018h-27.878L77.356,2.212H100.386z"></path><path d="M225.401,6.124c6.062,3.416,10.835,8.173,14.326,14.27c3.488,6.099,5.234,12.968,5.234,20.607c0,7.641-1.764,14.509-5.291,20.605c-3.527,6.099-8.318,10.854-14.381,14.27c-6.059,3.417-12.725,5.125-19.998,5.125c-7.272,0-13.959-1.708-20.057-5.125c-6.099-3.416-10.908-8.171-14.435-14.27c-3.527-6.097-5.288-12.965-5.288-20.605c0-7.64,1.761-14.509,5.288-20.607c3.527-6.097,8.336-10.854,14.435-14.27c6.098-3.416,12.784-5.125,20.057-5.125C212.637,0.999,219.342,2.708,225.401,6.124z M192.289,26.399c-3.159,3.564-4.741,8.43-4.741,14.602c0,6.023,1.582,10.836,4.741,14.435c3.157,3.601,7.491,5.399,13.003,5.399c5.435,0,9.733-1.799,12.893-5.399c3.156-3.599,4.738-8.411,4.738-14.435c0-6.172-1.563-11.037-4.684-14.602c-3.125-3.563-7.438-5.345-12.947-5.345C199.78,21.055,195.446,22.837,192.289,26.399z"></path><path d="M332.231,80.229h-21.707l-28.648-43.526v43.526h-21.711V2.322h21.711l28.648,44.077V2.322h21.707V80.229z"></path><path d="M371.462,19.513v12.893h25.232v16.419h-25.232v14.104H400v17.301h-50.249V2.212H400v17.301H371.462z"></path></g></svg>
@@ -327,12 +330,16 @@
                             <div class="col-xl-3 col-lg-2 col ps-0">
                                 <ul class="list-unstyled m-0 p-0 d-flex align-items-center justify-content-end iconBox">
                                     <li class="iconLi ps-3"><a class="iconAnchor" href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#searchOffcanvas" aria-controls="searchOffcanvas"><img src="assets/img/searchLightBlue.svg" alt=""></a></li>
-                                    <li class="iconLi ps-3"><a class="iconAnchor" href="javascript:;"><img src="assets/img/wishlistLightBlue.svg" alt=""></a></li>
-                                    <li class="iconLi ps-3">
+                                    <li class="iconLi ps-3 d-none d-lg-block"><a class="iconAnchor" href="javascript:;"><img src="assets/img/wishlistLightBlue.svg" alt=""></a></li>
+                                    <li class="iconLi ps-3"><a class="iconAnchor" href="javascript:;" data-bs-toggle="modal" data-bs-target="#LoginModal"><img src="assets/img/profileLightBlue.svg" alt=""></a></li>
+                                    <li class="iconLi ps-3 d-none d-lg-block">
                                         <a class="iconAnchor position-relative" href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
                                             <img src="assets/img/bagLightBlue.svg" alt="">
                                             <span class="d-inline-flex position-absolute rounded-circle align-items-center justify-content-center cartValue">2</span>
                                         </a>
+                                    </li>
+                                    <li class="iconLi ps-3 d-lg-none" data-bs-toggle="offcanvas" href="#mobileMenuOffcancas" role="button" aria-controls="mobileMenuOffcancas">
+                                        <a class="iconAnchor" href="javascript:;"><img src="assets/img/menuLightBlue.svg" alt=""></a>
                                     </li>
                                 </ul>
                             </div>
@@ -342,8 +349,8 @@
                 <!-- Header Ends Here -->
                 <div class="bodyScrollPart">
                     <!-- hero section starts here -->
-                    <div class="container-fluid px-0 heroSection">
-                        <div class="swiper mySwiper h-100">
+                    <div class="container-fluid px-0 heroSection mb-3 mb-lg-0">
+                        <div class="swiper heroSwiper h-100">
                             <div class="swiper-wrapper heroSlideBox h-100">
                                 <div class="swiper-slide heroSlide h-100" style="background-image: url(assets/img/bgShapeDark.svg);">
                                     <div class="container h-100">
@@ -389,9 +396,76 @@
                     </div>
                     <!-- hero section ends here -->
 
+
+                    <div class="container-fluid mobCategorySection pb-2 d-lg-none">
+                        <div class="">
+                            <div class="mobCategorySlider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide mobCatBox">
+                                        <a href="javascript:;" class="mobcatBoxInner text-decoration-none">
+                                            <img src="assets/img/grocery3d.svg" class="mobcatBoxImg" alt="">
+                                            <div class="mobcatBoxText">Grocery</div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide mobCatBox">
+                                        <a href="javascript:;" class="mobcatBoxInner text-decoration-none">
+                                            <img src="assets/img/fashion3d.svg" class="mobcatBoxImg" alt="">
+                                            <div class="mobcatBoxText">Fashion</div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide mobCatBox">
+                                        <a href="javascript:;" class="mobcatBoxInner text-decoration-none">
+                                            <img src="assets/img/mobile3d.svg" class="mobcatBoxImg" alt="">
+                                            <div class="mobcatBoxText">Mobile</div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide mobCatBox">
+                                        <a href="javascript:;" class="mobcatBoxInner text-decoration-none">
+                                            <img src="assets/img/electronics3d.svg" class="mobcatBoxImg" alt="">
+                                            <div class="mobcatBoxText">Electronics</div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide mobCatBox">
+                                        <a href="javascript:;" class="mobcatBoxInner text-decoration-none">
+                                            <img src="assets/img/travel3d.svg" class="mobcatBoxImg" alt="">
+                                            <div class="mobcatBoxText">Travel</div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide mobCatBox">
+                                        <a href="javascript:;" class="mobcatBoxInner text-decoration-none">
+                                            <img src="assets/img/sofa3d.svg" class="mobcatBoxImg" alt="">
+                                            <div class="mobcatBoxText">Sofa</div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide mobCatBox">
+                                        <a href="javascript:;" class="mobcatBoxInner text-decoration-none">
+                                            <img src="assets/img/appliances3d.svg" class="mobcatBoxImg" alt="">
+                                            <div class="mobcatBoxText">Appliance</div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide mobCatBox">
+                                        <a href="javascript:;" class="mobcatBoxInner text-decoration-none">
+                                            <img src="assets/img/twowheeler3d.svg" class="mobcatBoxImg" alt="">
+                                            <div class="mobcatBoxText">Vehicle</div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide mobCatBox">
+                                        <a href="javascript:;" class="mobcatBoxInner text-decoration-none">
+                                            <img src="assets/img/toys3d.svg" class="mobcatBoxImg" alt="">
+                                            <div class="mobcatBoxText">Toys</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- trending products starts here -->
                     <div class="container-fluid py-4  py-sm-5">
                         <div class="container">
+                            <div class="row d-none d-lg-flex">
+                                <div class="col-12 mb-4 text-center heading">Trending products</div>
+                            </div>
                             <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 g-3 g-sm-4">
                                 <div class="col">
                                     <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
@@ -411,8 +485,8 @@
                                             <div class="productDes">Sneakers & Keds</div>
                                             <div class="productName">Women Colorblock Sneakers</div>
                                             <div class="d-flex align-items-center justify-content-between">
-                                                <div class="productPrice">₹500 <span>₹700</span></div>
-                                                <div class="productRating d-flex align-items-center">
+                                                <div class="productPrice">₹1500 <span>₹1700</span></div>
+                                                <div class="productRating align-items-center d-none d-sm-flex">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
@@ -450,7 +524,7 @@
                                             <div class="productName">Cotton Lace Blouse</div>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="productPrice">₹500 <span>₹700</span></div>
-                                                <div class="productRating d-flex align-items-center">
+                                                <div class="productRating d-none d-sm-flex align-items-center">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
@@ -488,7 +562,7 @@
                                             <div class="productName">Mom High Waist Shorts</div>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="productPrice">₹500 <span>₹700</span></div>
-                                                <div class="productRating d-flex align-items-center">
+                                                <div class="productRating d-none d-sm-flex align-items-center">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
@@ -526,7 +600,7 @@
                                             <div class="productName">Women Sports Jacket</div>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="productPrice">₹500 <span>₹700</span></div>
-                                                <div class="productRating d-flex align-items-center">
+                                                <div class="productRating d-none d-sm-flex align-items-center">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
@@ -564,7 +638,7 @@
                                             <div class="productName">Polarized Sunglasses</div>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="productPrice">₹500 <span>₹700</span></div>
-                                                <div class="productRating d-flex align-items-center">
+                                                <div class="productRating d-none d-sm-flex align-items-center">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
@@ -602,7 +676,7 @@
                                             <div class="productName">TH Jeans City Backpack</div>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="productPrice">₹500 <span>₹700</span></div>
-                                                <div class="productRating d-flex align-items-center">
+                                                <div class="productRating d-none d-sm-flex align-items-center">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
@@ -640,7 +714,7 @@
                                             <div class="productName">Soft Panda Teddy Bear</div>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="productPrice">₹500 <span>₹700</span></div>
-                                                <div class="productRating d-flex align-items-center">
+                                                <div class="productRating d-none d-sm-flex align-items-center">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
@@ -678,7 +752,7 @@
                                             <div class="productName">Metallic Lipstick (Crimson)</div>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="productPrice">₹500 <span>₹700</span></div>
-                                                <div class="productRating d-flex align-items-center">
+                                                <div class="productRating d-none d-sm-flex align-items-center">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
@@ -716,7 +790,7 @@
                                             <div class="productName">5-Pack Multicolor Bracelets</div>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="productPrice">₹500 <span>₹700</span></div>
-                                                <div class="productRating d-flex align-items-center">
+                                                <div class="productRating d-none d-sm-flex align-items-center">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
@@ -754,7 +828,7 @@
                                             <div class="productName">Soft Footbed Sandals</div>
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <div class="productPrice">₹500 <span>₹700</span></div>
-                                                <div class="productRating d-flex align-items-center">
+                                                <div class="productRating d-none d-sm-flex align-items-center">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
                                                     <img src="assets/img/star.png" alt="">
@@ -776,6 +850,305 @@
                             </div>
                         </div>
                     </div>
+                    <!-- trending products Ends here -->
+                    <!-- Banner section starts here  -->
+                    <div class="container-fluid py-0 py-sm-5 bannerSection">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg-8 d-none d-sm-block">
+                                    <div class="defaultBanner h-100">
+                                        <div class="defaultBannerSubHead">Hurry up! Limited time offer</div>
+                                        <div class="defaultBannerHead my-1">Converse All Star on Sale</div>
+                                        <div><button class="btn btn-theme2 text-white btnStyle1 shadow-none">Shop Now</button></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="postBanner text-center h-100">
+                                        <div class="postBannerHead">Your Add Banner Here</div>
+                                        <div class="postBannerSubHead my-1">Hurry up to reserve your spot</div>
+                                        <div><button class="btn btn-theme2 text-white btnStyle1 shadow-none">Contact Us</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Banner section Ends here  -->
+
+                    <!-- category Section Starts here -->
+
+                    <div class="container-fluid categorySection py-3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-xl-5 mb-3 mb-sm-4 mb-lg-none">
+                                    <div class="categorySecFixed h-100">
+                                        <div class="catSecFixedTop row mx-0 p-3">
+                                            <div class="col">
+                                                <div class="catType">Hoodie day</div>
+                                                <a href="javascript:;" class="catShop">Shop hoodies</a>
+                                            </div>
+                                            <div class="col-auto position-relative sliderBtnBox">
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-button-next"></div>
+                                            </div>
+                                        </div>
+                                        <div class="catFixedBottom d-none d-lg-block">
+                                            <img src="assets/img/procat1.jpg" class="" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-6 col-xl-7">
+                                    <div class="productCategorySlider swiper h-100">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="row g-3 g-sm-4">
+                                                    <div class="col-12 ">
+                                                        <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                                            <div class="col-12 productImg">
+                                                                <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                                    <img src="assets/img/pro1.jpg" class="w-100 h-100 proImg" alt="">
+                                                                    <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                                    <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                                        <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                                    </div>
+                                                                    <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                                        <img src="assets/img/expand.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 prodetailBox">
+                                                                <div class="productDes">Sneakers & Keds</div>
+                                                                <div class="productName">Women Colorblock Sneakers</div>
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <div class="productPrice">₹500 <span>₹700</span></div>
+                                                                    <div class="productRating d-none d-sm-flex align-items-center">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-2">
+                                                                    <button class="cart-button btn btn-theme1 text-white">
+                                                                        <span class="add-to-cart">Add to cart</span>
+                                                                        <span class="added">Added</span>
+                                                                        <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                                        <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 ">
+                                                        <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                                            <div class="col-12 productImg">
+                                                                <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                                    <img src="assets/img/pro2.jpg" class="w-100 h-100 proImg" alt="">
+                                                                    <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                                    <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                                        <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                                    </div>
+                                                                    <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                                        <img src="assets/img/expand.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 prodetailBox">
+                                                                <div class="productDes">Women’s T-shirt</div>
+                                                                <div class="productName">Cotton Lace Blouse</div>
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <div class="productPrice">₹500 <span>₹700</span></div>
+                                                                    <div class="productRating d-none d-sm-flex align-items-center">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-2">
+                                                                    <button class="cart-button btn btn-theme1 text-white">
+                                                                        <span class="add-to-cart">Add to cart</span>
+                                                                        <span class="added">Added</span>
+                                                                        <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                                        <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="row g-3 g-sm-4">
+                                                    <div class="col-12 ">
+                                                        <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                                            <div class="col-12 productImg">
+                                                                <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                                    <img src="assets/img/pro1.jpg" class="w-100 h-100 proImg" alt="">
+                                                                    <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                                    <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                                        <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                                    </div>
+                                                                    <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                                        <img src="assets/img/expand.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 prodetailBox">
+                                                                <div class="productDes">Sneakers & Keds</div>
+                                                                <div class="productName">Women Colorblock Sneakers</div>
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <div class="productPrice">₹500 <span>₹700</span></div>
+                                                                    <div class="productRating d-none d-sm-flex align-items-center">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-2">
+                                                                    <button class="cart-button btn btn-theme1 text-white">
+                                                                        <span class="add-to-cart">Add to cart</span>
+                                                                        <span class="added">Added</span>
+                                                                        <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                                        <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 ">
+                                                        <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                                            <div class="col-12 productImg">
+                                                                <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                                    <img src="assets/img/pro2.jpg" class="w-100 h-100 proImg" alt="">
+                                                                    <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                                    <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                                        <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                                    </div>
+                                                                    <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                                        <img src="assets/img/expand.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 prodetailBox">
+                                                                <div class="productDes">Women’s T-shirt</div>
+                                                                <div class="productName">Cotton Lace Blouse</div>
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <div class="productPrice">₹500 <span>₹700</span></div>
+                                                                    <div class="productRating d-none d-sm-flex align-items-center">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-2">
+                                                                    <button class="cart-button btn btn-theme1 text-white">
+                                                                        <span class="add-to-cart">Add to cart</span>
+                                                                        <span class="added">Added</span>
+                                                                        <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                                        <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="row g-3 g-sm-4">
+                                                    <div class="col-12 ">
+                                                        <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                                            <div class="col-12 productImg">
+                                                                <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                                    <img src="assets/img/pro1.jpg" class="w-100 h-100 proImg" alt="">
+                                                                    <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                                    <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                                        <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                                    </div>
+                                                                    <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                                        <img src="assets/img/expand.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 prodetailBox">
+                                                                <div class="productDes">Sneakers & Keds</div>
+                                                                <div class="productName">Women Colorblock Sneakers</div>
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <div class="productPrice">₹500 <span>₹700</span></div>
+                                                                    <div class="productRating d-none d-sm-flex align-items-center">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-2">
+                                                                    <button class="cart-button btn btn-theme1 text-white">
+                                                                        <span class="add-to-cart">Add to cart</span>
+                                                                        <span class="added">Added</span>
+                                                                        <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                                        <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 ">
+                                                        <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                                            <div class="col-12 productImg">
+                                                                <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                                    <img src="assets/img/pro2.jpg" class="w-100 h-100 proImg" alt="">
+                                                                    <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                                    <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                                        <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                                    </div>
+                                                                    <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                                        <img src="assets/img/expand.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 prodetailBox">
+                                                                <div class="productDes">Women’s T-shirt</div>
+                                                                <div class="productName">Cotton Lace Blouse</div>
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <div class="productPrice">₹500 <span>₹700</span></div>
+                                                                    <div class="productRating d-none d-sm-flex align-items-center">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                        <img src="assets/img/star.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-2">
+                                                                    <button class="cart-button btn btn-theme1 text-white">
+                                                                        <span class="add-to-cart">Add to cart</span>
+                                                                        <span class="added">Added</span>
+                                                                        <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                                        <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- category Section ends here -->
+
                     <!-- web footer starts here -->
                     <footer class="container-fluid bg-dark d-none d-lg-block">
                         <div class="container">
@@ -861,22 +1234,37 @@
                 </div>
                 <!--mobile footer starts here -->
                 <div class="mobileFooter d-lg-none">
-                    <div class="row row-cols-4">
+                    <div class="row mx-0 row-cols-5">
                         <div class="col bottomBarLink active">
-                            <img src="assets/img/homeLightBlue.svg" alt="">
-                            <div class="BottomBarText">Home</div>
+                            <div class="bottomBarLinkInner position-relative">
+                                <img src="assets/img/homeLightBlue.svg" alt="">
+                                <div class="BottomBarText">Home</div>
+                            </div>
                         </div>
                         <div class="col bottomBarLink">
-                            <img src="assets/img/categoriesLightBlue.svg" alt="">
-                            <div class="BottomBarText">Category</div>
+                            <div class="bottomBarLinkInner position-relative">
+                                <img src="assets/img/categoriesLightBlue.svg" alt="">
+                                <div class="BottomBarText">Category</div>
+                            </div>
                         </div>
                         <div class="col bottomBarLink">
-                            <img src="assets/img/notificationLightBlue.svg" alt="">
-                            <div class="BottomBarText">Notification</div>
+                            <div class="bottomBarLinkInner position-relative">
+                                <img src="assets/img/notificationLightBlue.svg" alt="">
+                                <div class="BottomBarText">Notification</div>
+                            </div>
                         </div>
                         <div class="col bottomBarLink">
-                            <img src="assets/img/bagLightBlue.svg" alt="">
-                            <div class="BottomBarText">Cart</div>
+                            <div class="bottomBarLinkInner position-relative">
+                                <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                <div class="BottomBarText">Wishlist</div>
+                            </div>
+                        </div>
+                        <div class="col bottomBarLink" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+                            <div class="bottomBarLinkInner position-relative">
+                                <img src="assets/img/bagLightBlue.svg" alt="">
+                                <div class="BottomBarText">Cart</div>
+                                <span class="cartVal d-inline-flex align-items-center justify-content-center rounded-circle bg-dark text-white position-absolute">2</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -885,8 +1273,6 @@
         </div>
     </div>
     
-
-  
 
 <!-- search offcanvas -->
 
@@ -930,7 +1316,7 @@
                             <div class="col-auto cartRemoveImg">
                                 <img src="assets/img/crossLightBlue.svg" alt="">
                             </div>
-                            <div class="productRating d-flex align-items-center mb-1">
+                            <div class="productRating d-none d-sm-flex align-items-center mb-1">
                                 <img src="assets/img/star.png" alt="">
                                 <img src="assets/img/star.png" alt="">
                                 <img src="assets/img/star.png" alt="">
@@ -961,7 +1347,7 @@
                             <div class="col-auto cartRemoveImg">
                                 <img src="assets/img/crossLightBlue.svg" alt="">
                             </div>
-                            <div class="productRating d-flex align-items-center mb-1">
+                            <div class="productRating d-none d-sm-flex align-items-center mb-1">
                                 <img src="assets/img/star.png" alt="">
                                 <img src="assets/img/star.png" alt="">
                                 <img src="assets/img/star.png" alt="">
@@ -992,12 +1378,48 @@
     </div>
 </div>
 
+
+<!-- mobile menu offcanvas -->
+
+<div class="offcanvas offcanvas-start mobileMenuOffcanvas" tabindex="-1" id="mobileMenuOffcancas" aria-labelledby="mobileMenuOffcancasLabel">
+    <div class="offcanvas-header border-bottom">
+        <div class="logo" id="mobileMenuOffcancasLabel">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="400px" height="82px" viewBox="0 0 400 82" enable-background="new 0 0 400 82" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"><text transform="matrix(1 0 0 1 69.7529 415.1504)"><tspan x="0" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="-3">A</tspan><tspan x="50.544" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="1">V</tspan><tspan x="105.983" y="0" font-family="'Poppins-ExtraBold'" font-size="72" letter-spacing="3">ONE</tspan></text><g><path d="M54.766,67.227H27.107L22.81,80.229H0L28.54,2.543h25.014l28.43,77.687h-22.92L54.766,67.227z M49.367,50.918l-8.375-25.345l-8.485,25.345H49.367z"></path><path d="M100.386,2.212l17.631,56.199l17.521-56.199h23.03l-26.667,78.018h-27.878L77.356,2.212H100.386z"></path><path d="M225.401,6.124c6.062,3.416,10.835,8.173,14.326,14.27c3.488,6.099,5.234,12.968,5.234,20.607c0,7.641-1.764,14.509-5.291,20.605c-3.527,6.099-8.318,10.854-14.381,14.27c-6.059,3.417-12.725,5.125-19.998,5.125c-7.272,0-13.959-1.708-20.057-5.125c-6.099-3.416-10.908-8.171-14.435-14.27c-3.527-6.097-5.288-12.965-5.288-20.605c0-7.64,1.761-14.509,5.288-20.607c3.527-6.097,8.336-10.854,14.435-14.27c6.098-3.416,12.784-5.125,20.057-5.125C212.637,0.999,219.342,2.708,225.401,6.124z M192.289,26.399c-3.159,3.564-4.741,8.43-4.741,14.602c0,6.023,1.582,10.836,4.741,14.435c3.157,3.601,7.491,5.399,13.003,5.399c5.435,0,9.733-1.799,12.893-5.399c3.156-3.599,4.738-8.411,4.738-14.435c0-6.172-1.563-11.037-4.684-14.602c-3.125-3.563-7.438-5.345-12.947-5.345C199.78,21.055,195.446,22.837,192.289,26.399z"></path><path d="M332.231,80.229h-21.707l-28.648-43.526v43.526h-21.711V2.322h21.711l28.648,44.077V2.322h21.707V80.229z"></path><path d="M371.462,19.513v12.893h25.232v16.419h-25.232v14.104H400v17.301h-50.249V2.212H400v17.301H371.462z"></path></g></svg>
+        </div>
+        <button type="button" class="closeBtn shadow-none" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="assets/img/crossLightBlue.svg" alt="">
+        </button>
+    </div>
+    <div class="offcanvas-body py-2">
+        <ul class="list-unstyled m-0 p-0 mobMenuUl">
+            <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">Home</a></li>
+            <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">About Us</a></li>
+            <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">Order & Returns</a></li>
+            <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">Help Center</a></li>
+            <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">Career</a></li>
+            <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">FAQ's</a></li>
+            <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">Contact Us</a></li>
+            <li class="mobMenuLi">
+                <a class="mobMenuAnchor w-100 py-2 d-inline-block mobMenuCollapseAnchor collapsed" data-bs-toggle="collapse" href="#mobMenuCollapse1" role="button" aria-expanded="false" aria-controls="mobMenuCollapse1">Terms, Policies & Licenses</a>
+                <div class="collapse" id="mobMenuCollapse1">
+                    <ul class="list-unstyled m-0 p-0 mobMenuUl ps-3">
+                        <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">Terms Of Use</a></li>
+                        <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">Return Policy</a></li>
+                        <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">Privacy Policy</a></li>
+                        <li class="mobMenuLi"><a class="mobMenuAnchor w-100 py-2 d-inline-block" href="javascript:;">License</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
 <!-- Product Preview Modal -->
 <div class="modal fade productPreviewModal" id="productPrivew" data-bs-backdrop="static" tabindex="-1" aria-labelledby="productPrivewLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-md-down modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <div class="title" id="productPrivewLabel">Your Cart</div>
+                <div class="title" id="productPrivewLabel">Martha Knit Top</div>
                 <button type="button" class="closeBtn shadow-none" data-bs-dismiss="modal" aria-label="Close">
                     <img src="assets/img/crossLightBlue.svg" alt="">
                 </button>
@@ -1055,8 +1477,8 @@
                         </div>
                     </div>
                     <div class="col-lg-6 px-0 ps-md-2">
-                        <div class="row proDetailSide">
-                            <div class="col-12 proDetail">Croock</div>
+                        <div class="row proDetailSide flex-column flex-nowrap h-100">
+                            <div class="col-12 proDetail mt-3 mt-lg-0">Croock</div>
                             <div class="col-12 proName mt-1">Martha Knit Top</div>
                             <div class="col-12 proAvability available mt-1">In Stock</div>
                             <div class="col-12 proPrice mt-1">₹3000.00</div>
@@ -1111,10 +1533,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <div class="row mx-0">
+                            <div class="col-12 flex-fill d-none d-lg-flex align-items-end h-100">
+                                <div class="row mx-0 w-100">
                                     <div class="col-auto px-0">
-
+                                        <div class="d-flex align-items-center cartPlusMinus">
+                                            <span>-</span>
+                                            <span>1</span>
+                                            <span>+</span>
+                                        </div>
                                     </div>
                                     <div class="col pe-0">
                                         <button class="cart-button btn btn-theme1 text-white">
@@ -1130,14 +1556,48 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div> -->
+            <div class="modal-footer d-lg-none">
+                <div class="row mx-0 w-100">
+                    <div class="col-auto px-0">
+                        <div class="d-flex align-items-center cartPlusMinus">
+                            <span>-</span>
+                            <span>1</span>
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="col pe-0">
+                        <button class="cart-button btn btn-theme1 text-white">
+                            <span class="add-to-cart">Add to cart</span>
+                            <span class="added">Added</span>
+                            <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                            <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="LoginModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
     <!-- Bootstrap Js -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- swiper -->

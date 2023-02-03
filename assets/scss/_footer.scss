@@ -110,6 +110,12 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        & .bottomBarLinkInner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
         & img {
             height: 16px;
             filter: brightness(0.5);
@@ -125,6 +131,13 @@ footer {
             & .BottomBarText {
                 color: $theme1;
             }
+        }
+        & .cartVal {
+            height: 15px;
+            width: 15px;
+            font-size: 10px;
+            top: -5px;
+            right: -11px;
         }
     }
 }
