@@ -125,3 +125,40 @@ var swiper = new Swiper(".heroSwiper", {
           $('.loader').fadeOut('active');
       }, 100);
   });
+
+
+  // login form validation
+(() => {
+  'use strict'
+  const LoginForm = document.querySelectorAll('.loginForm');
+  let loginBtn = document.querySelector('.loginBtn')
+  Array.from(LoginForm).forEach(form => {
+    form.addEventListener('submit', event => {
+      event.preventDefault()
+      event.stopPropagation()
+      if (form.checkValidity()) {
+          loginBtn.classList.add('show', 'disabled')
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+
+
+    // register form validation
+    const registerForm = document.querySelectorAll('.registerForm');
+    let registerBtn = document.querySelector('.registerBtn')
+    Array.from(registerForm).forEach(form => {
+      form.addEventListener('submit', event => {
+        event.preventDefault()
+        event.stopPropagation()
+        if (form.checkValidity()) {
+            registerBtn.classList.add('show', 'disabled')
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+
+

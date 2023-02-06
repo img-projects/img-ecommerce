@@ -1,0 +1,68 @@
+.categoryBar {
+    border: 1px solid $gray-200;
+    & .fllterHeader {
+        padding: 10px 0;
+        border-bottom: 1px solid $gray-200;
+        & .filterheading {
+            font-size: 20px;
+            font-weight: 500;
+            color: $gray-900;
+        }
+        & .clearBtn {
+            font-size: 14px;
+            color: $theme1;
+            cursor: pointer;
+        }
+    }
+    & .filterAnchor {
+        width: 100%;
+        color: $gray-900;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 12px 0;
+        font-weight: 400;
+        display: inline-flex;
+        background-repeat: no-repeat;
+        background-position: right 0 top 16px;
+        background-size: 12px;
+        &.collapsed {
+            background-image: url(../img/plusLightBlue.svg);
+        }
+        &:not(.collapsed) {
+            background-image: url(../img/minusLightBlue.svg);
+        }
+    }
+    & .form-check-input {
+        border: 1px solid $theme1 !important;
+        width: 0.9em !important;
+        height: 0.9em !important;
+        margin-top: 0.4em !important;
+        &:checked {
+            background-color: $theme1 !important;
+        }
+    }
+    & .form-check-label {
+        font-size: 13px;
+        cursor: pointer;
+        user-select: none;
+    }
+    & .filterSearch {
+        & img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 10px;
+            filter: brightness(0.5);
+            height: 14px;
+        }
+        & input {
+            padding-left: 30px;
+            font-size: 14px;
+        }
+    }
+    & .moreAnchor {
+        font-size: 13px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
