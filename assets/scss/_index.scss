@@ -2357,33 +2357,80 @@
 
 
 .productDetailPage {
-    & .productPrevCarousel {
-        & .swiper-wrapper {
-            & .swiper-slide {
-                & img {
-
-                }
-            }
-        }
-    }
-    & .thumbCarouselWrapper {
-        // position: relative;
-        // top: -80px;
-        // margin-bottom: -80px;
-        margin-top: -80px;
-        & .productthumbCarousel {
-            & .swiper-wrapper {
-                & .swiper-slide {
-                    height: 80px;
-                    margin: 0 5px !important;
-                    border-radius: 4px;
-                    overflow: hidden;
-                    & img {
-                        width: 100%;
+    & .productClickBtnSide {
+        width: 100px;
+        & .sideClickWrapper {
+            & .sideClickInner {
+                & .clickWrapper {
+                    & .clickSlide {
+                        height: 80px;
+                        width: 80px;
+                        margin: 0 0 12px 0 !important;
+                        border-radius: 4px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        & img {
+                            width: 100%;
+                        }
+                        &.vidClickSlide {
+                            position: relative;
+                            & .vidIcon {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba($black, 0.4);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                & img {
+                                    width: 18px;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
+    }
+    & .productPreviewImgSide {
+        width: calc(100% - 100px);
+        & .productPreviewBox {
+            width: 100%;
+            height: 500px;
+            border-radius: 3px;
+            overflow: hidden;
+            & .imgPreview {
+                & .imgForPreview {
+                    object-fit: cover;
+                }
+            }
+            & .videoForPreview {
+                width: 100%;
+                height: 100%;
+                & iframe {
+                    height: 100% !important;
+                    width: 100%;
+                }
+            }
+        }
+        &.imgPreviewOn {
+
+        }
+        &.videoPreviewOn {
+            & .imgPreview {
+                display: none;
+            }
+            & .videoForPreview {
+                display: block !important;
+            }
+        }
+    }
+    & .mainBtns {
+        font-size: 14px !important;
+        border-radius: 4px !important;
+        height: 45px !important;
     }
     & .proDetailSide {
         & .proDetail {
@@ -2442,6 +2489,158 @@
             }
         }
         
+        & .accordion {
+            & .accordion-item {
+                border: none !important;
+                border-bottom: 1px solid #F3F3F3 !important;
+                border-radius: 14px !important;
+                transform: translate(0px, 0px);
+                & .accordion-header {
+                    & .accordion-button {
+                        font-weight: 500 !important;
+                        font-size: 15px !important;
+                        line-height: 26px !important;
+                        border-radius: 0 !important;
+                        color: $gray-900;
+                        padding-left: 0 !important;
+                        padding-right: 30px;
+                        &:not(.collapsed) {
+                            background-color: $white !important;
+                            &::after {
+                                background-image: url(../img/minusicon.svg);
+                                transform: none !important; 
+                            }
+                        }
+                        &::after {
+                            background-image: url(../img/plusicon.svg);
+                            background-size: 12px !important;
+                            transition: none !important;
+                            top: 21px;
+                            position: absolute;
+                            right: 0px;
+                            background-position: center;
+                        }
+
+                    }
+                }
+                & .accordion-collapse {
+                    &.show {
+                    }
+                    & .accordion-body {
+                        line-height: 24px !important;
+                        padding-left: 0 !important;
+                        padding-right: 0 !important;
+                        & .detailHead {
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                            color: $gray-600;
+                        }
+                        & .detailDes {
+                            font-size: 0.8rem;
+                            color: $gray-900;
+                        }
+                        & .reviewLine {
+                            & .reviewStar {
+                                font-size: 0.8rem;
+                                display: flex;
+                                align-items: center;
+                                & span {
+                                    display: inline-flex;
+                                    width: 8px;
+                                }
+                                & img {
+                                    margin-left: 4px;
+                                    height: 11px;
+                                    filter: brightness(0.3);
+                                }
+                            }
+                            & .reviewProgress {
+                                & .progress {
+                                    height: 0.3rem;
+                                    & .progress-bar {}
+                                }
+                            }
+                            & .totalReview {
+                                width: 20px;
+                                font-size: 0.8rem;
+                            }
+                        }
+                        & .totalReviews {
+                            font-size: 18px;
+                            color: $gray-900;
+                            font-weight: 500;
+                        }
+                        & .totalReviewStar {
+                            padding: 3px 0;
+                            & img {
+                                height: 12px;
+                            }
+                        }
+                        & .reviewLight {
+                            font-size: 12px;
+                            color: $gray-600;
+                            line-height: 18px;
+                        }
+                        & .reviewUserName {
+                            font-size: 15px;
+                            color: $gray-900;
+                        }
+                        & .userReviewStar {
+                            & img {
+                                height: 12px;
+                                margin: 0 1px;
+                            }
+                        }
+                        & .reviewUser {
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            & img {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        & .reviewText {
+                            font-size: 14px;
+                            color: $gray-700;
+                        }
+                        & .reviewAttachedImages {
+                            & .attachImg {
+                                width: 80px;
+                                height: 80px;
+                                border-radius: 3px;
+                                overflow: hidden;
+                                & img {
+                                    height: 100%;
+                                    width: 100%;
+                                    object-fit: cover;
+
+                                }
+                            }
+                        }
+                        & .likeBtn {
+                            display: flex;
+                            align-items: center;
+                            font-size: 14px;
+                            color: $gray-700;
+                            & img {
+                                height: 17px;
+                                margin-right: 5px;
+                            }
+                            & span {
+
+                            }
+                        }
+                        & .reviewDivider {
+                            font-size: 12px;
+                            color: $gray-500;
+                        }
+                    }
+                }
+            }
+        }
     }
     & .cartPlusMinus {
         & span {

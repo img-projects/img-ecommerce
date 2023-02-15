@@ -91,6 +91,18 @@ var swiper = new Swiper(".heroSwiper", {
     });
 
 
+    // product Preview Main carousel
+    var swiper6 = new Swiper(".productMainPrevCarousel", {
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 24,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+
     // mobile category slider
     var swiper = new Swiper(".mobCategorySlider", {
       slidesPerView: 1,
@@ -211,4 +223,7 @@ $(document).ready(function() {
     minimumResultsForSearch: Infinity
   });
 });
+
+
+
 
