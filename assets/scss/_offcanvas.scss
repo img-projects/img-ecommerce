@@ -37,9 +37,15 @@
 
 
 // cart offcanvas
+.offcanvas-backdrop {
+    height: 100% !important;
+    display: none !important;
+}
 
 .cartOffcanvas {
     width: 350px !important;
+    height: 100% !important;
+    bottom: unset !important;
     & .offcanvas-header {
         & .title {
             font-size: 16px;

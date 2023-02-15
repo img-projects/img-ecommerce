@@ -162,3 +162,53 @@ var swiper = new Swiper(".heroSwiper", {
 })()
 
 
+// view change buttons
+const productCategoryPage = document.querySelector('.productCategoryPage')
+const listViewRow = document.querySelector('.listViewRow')
+const viewBtns = document.querySelectorAll('.viewBtn');
+viewBtns.forEach(viewBtn =>{
+  viewBtn.addEventListener('click', (e)=> {
+    for (i=0; i<viewBtns.length; i++){
+      viewBtns[i].classList.remove('active')
+    }
+    e.currentTarget.classList.add('active')
+    if(e.currentTarget.classList.contains('listViewBtn')){
+      productCategoryPage.classList.add('listviewactive')
+      listViewRow.classList.remove('row-cols-xl-4' , 'row-cols-lg-3', 'row-cols-md-3', 'row-cols-2')
+      listViewRow.classList.add('row-cols-xl-2' , 'row-cols-lg-2', 'row-cols-md-2', 'row-cols-1')
+    }
+    else {
+      productCategoryPage.classList.remove('listviewactive')
+      listViewRow.classList.add('row-cols-xl-4' , 'row-cols-lg-3', 'row-cols-md-3', 'row-cols-2')
+      listViewRow.classList.remove('row-cols-xl-2' , 'row-cols-lg-2', 'row-cols-md-2', 'row-cols-1')
+    }
+  })
+})
+
+
+
+// mobile filter bar
+const filterBtn = document.querySelector('.filterBtn');
+const sidebarWrapper = document.querySelector('.sidebarWrapper');
+const bodyScrollPart = document.querySelector('#bodyScrollPart');
+const filterClose = document.querySelector('#filterClose');
+
+
+filterBtn.addEventListener('click', ()=> {
+  sidebarWrapper.classList.toggle('showFilterBar')
+  bodyScrollPart.classList.toggle('stopBodyScroll')
+})
+
+filterClose.addEventListener('click', ()=> {
+  sidebarWrapper.classList.toggle('showFilterBar')
+  bodyScrollPart.classList.toggle('stopBodyScroll')
+})
+
+
+// sort by select
+$(document).ready(function() {
+  $('.sortBySelect').select2({
+    minimumResultsForSearch: Infinity
+  });
+});
+
