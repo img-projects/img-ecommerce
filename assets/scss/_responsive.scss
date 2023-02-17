@@ -9,7 +9,7 @@
   @include categorySection-mixin-min-sm();
   @include filterBar-mixin-min-sm();
   @include productCategoryPage-mixin-min-sm();
-  // @include heroSection-mixin-min-sm();
+  @include productDetailPage-mixin-min-sm();
   // @include heroSection-mixin-min-sm();
   // @include heroSection-mixin-min-sm();
   // @include heroSection-mixin-min-sm();
@@ -31,7 +31,7 @@
   @include categorySection-mixin-min-md();
   @include filterBar-mixin-min-md();
   @include productCategoryPage-mixin-min-md();
-  // @include heroSection-mixin-min-md();
+  @include productDetailPage-mixin-min-md();
   // @include heroSection-mixin-min-md();
   // @include heroSection-mixin-min-md();
   // @include heroSection-mixin-min-md();
@@ -52,7 +52,7 @@
   @include categorySection-mixin-min-lg();
   @include filterBar-mixin-min-lg();
   @include productCategoryPage-mixin-min-lg();
-  // @include heroSection-mixin-min-lg();
+  @include productDetailPage-mixin-min-lg();
   // @include heroSection-mixin-min-lg();
   // @include heroSection-mixin-min-lg();
   // @include heroSection-mixin-min-lg();
@@ -73,7 +73,7 @@
   @include categorySection-mixin-min-xl();
   @include filterBar-mixin-min-xl();
   @include productCategoryPage-mixin-min-xl();
-  // @include heroSection-mixin-min-xl();
+  @include productDetailPage-mixin-min-xl();
   // @include heroSection-mixin-min-xl();
   // @include heroSection-mixin-min-xl();
   // @include heroSection-mixin-min-xl();
@@ -94,7 +94,7 @@
   @include categorySection-mixin-min-xxl();
   @include filterBar-mixin-min-xxl();
   @include productCategoryPage-mixin-min-xxl();
-  // @include heroSection-mixin-min-xxl();
+  @include productDetailPage-mixin-min-xxl();
   // @include heroSection-mixin-min-xxl();
   // @include heroSection-mixin-min-xxl();
   // @include heroSection-mixin-min-xxl();
@@ -115,7 +115,7 @@
   @include categorySection-mixin-max-xl();
   @include filterBar-mixin-max-xl();
   @include productCategoryPage-mixin-max-xl();
-  // @include heroSection-mixin-max-xl();
+  @include productDetailPage-mixin-max-xl();
   // @include heroSection-mixin-max-xl();
   // @include heroSection-mixin-max-xl();
   // @include heroSection-mixin-max-xl();
@@ -136,7 +136,7 @@
   @include categorySection-mixin-max-1300();
   @include filterBar-mixin-max-1300();
   @include productCategoryPage-mixin-max-1300();
-  // @include heroSection-mixin-max-1300();
+  @include productDetailPage-mixin-max-1300();
   // @include heroSection-mixin-max-1300();
   // @include heroSection-mixin-max-1300();
   // @include heroSection-mixin-max-1300();
@@ -157,7 +157,7 @@
   @include categorySection-mixin-max-lg();
   @include filterBar-mixin-max-lg();
   @include productCategoryPage-mixin-max-lg();
-  // @include heroSection-mixin-max-lg();
+  @include productDetailPage-mixin-max-lg();
   // @include heroSection-mixin-max-lg();
   // @include heroSection-mixin-max-lg();
   // @include heroSection-mixin-max-lg();
@@ -178,7 +178,7 @@
   @include categorySection-mixin-max-md();
   @include filterBar-mixin-max-md();
   @include productCategoryPage-mixin-max-md();
-  // @include heroSection-mixin-max-md();
+  @include productDetailPage-mixin-max-md();
   // @include heroSection-mixin-max-md();
   // @include heroSection-mixin-max-md();
   // @include heroSection-mixin-max-md();
@@ -202,7 +202,7 @@
   @include categorySection-mixin-max-sm();
   @include filterBar-mixin-max-sm();
   @include productCategoryPage-mixin-max-sm();
-  // @include heroSection-mixin-max-sm();
+  @include productDetailPage-mixin-max-sm();
   // @include heroSection-mixin-max-sm();
   // @include heroSection-mixin-max-sm();
   // @include heroSection-mixin-max-sm();
@@ -225,7 +225,7 @@
   @include categorySection-mixin-max-xs();
   @include filterBar-mixin-max-xs();
   @include productCategoryPage-mixin-max-xs();
-  // @include heroSection-mixin-max-xs();
+  @include productDetailPage-mixin-max-xs();
   // @include heroSection-mixin-max-xs();
   // @include heroSection-mixin-max-xs();
   // @include heroSection-mixin-max-xs();

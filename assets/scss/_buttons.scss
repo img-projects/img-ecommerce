@@ -14,6 +14,7 @@
 
 .cart-button {
     position: relative;
+    z-index: 2;
     padding: 10px;
     width: 100%;
     height: 40px;
@@ -117,5 +118,29 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+
+.stepBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & .spinner-border {
+        height: 1rem !important;
+        width: 1rem !important;
+        --bs-spinner-border-width: 0.15rem !important;
+    }
+    &.disabled {
+        color: $white !important;
+        & .mainText {
+            display: none !important;
+        }
+        & .loadingText {
+            display: block !important;
+        }
+        & .spinner-border {
+            display: block !important;
+        }
     }
 }

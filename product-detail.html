@@ -66,7 +66,7 @@
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
-<body class="vh-100 overflow-hidden">
+<body class="vh-100 overflow-hidden" page-name="productDetailPage">
         <div class="loader active">
             <span></span>
         </div>
@@ -362,15 +362,15 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="container-fluid productDetailPage py-4">
-                        <div class="container">
+                    <div class="container-fluid productDetailPage py-lg-4">
+                        <div class="container productDetailPageContainer">
                             <div class="row mx-0 justify-content-center">
-                                <div class="col-xxl-10">
+                                <div class="col-xxl-10 px-0">
                                     <div class="row mx-0 position-relative">
                                         <div class="col-lg-6 px-0 pe-md-2">
                                             <div class="row mx-0 sticky-top">
                                                 <div class="col-12 px-0">
-                                                    <div class="row mx-0">
+                                                    <div class="row">
                                                         <div class="col-auto productClickBtnSide">
                                                             <div class="sideClickWrapper">
                                                                 <div class="sideClickInner">
@@ -408,7 +408,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row mx-0 mt-4">
+                                                    <div class="row mt-lg-2 mt-1 d-none d-lg-flex g-3">
                                                         <div class="col-6">
                                                             <button class="cart-button btn btn-theme1 text-white mainBtns">
                                                                 <span class="add-to-cart">Add to cart</span>
@@ -480,6 +480,23 @@
                                                                     <label class="colorLabel" for="size5"><span class="d-inline-block h-100 w-100">XXL</span></label>
                                                                 </div>
                                                             </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row mt-lg-2 mt-3 g-3 d-lg-none">
+                                                        <div class="col-6">
+                                                            <button class="cart-button btn btn-theme1 text-white mainBtns">
+                                                                <span class="add-to-cart">Add to cart</span>
+                                                                <span class="added">Added</span>
+                                                                <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                                <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <button class="btn btn-theme1 text-white w-100 mainBtns">
+                                                                Buy Now
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -555,15 +572,97 @@
                                                             </div>
                                                         </div>
                                                         <div class="accordion-item">
+                                                            <div class="accordion-header" id="headingFour">
+                                                                <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                                Size & Fit
+                                                                </button>
+                                                            </div>
+                                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                                                                <div class="accordion-body pt-0">
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-12 proDetailHeading text-center mb-2">Men's body sizing chart</div>
+                                                                        <div class="col-12">
+                                                                            <div class="table-responsive">
+                                                                                <table class="table table-bordered sizeChartTable">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>Size</th>
+                                                                                            <th>XS</th>
+                                                                                            <th>S</th>
+                                                                                            <th>M</th>
+                                                                                            <th>L</th>
+                                                                                            <th>XL</th>
+                                                                                            <th>XXL</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>Chest</td>
+                                                                                            <td>33" - 36"</td>
+                                                                                            <td>36" - 39"</td>
+                                                                                            <td>39" - 41"</td>
+                                                                                            <td>41" - 43"</td>
+                                                                                            <td>43" - 46"</td>
+                                                                                            <td>46" - 49"</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Waist</td>
+                                                                                            <td>27" - 30"</td>
+                                                                                            <td>30" - 33"</td>
+                                                                                            <td>33" - 35"</td>
+                                                                                            <td>36" - 38"</td>
+                                                                                            <td>38" - 42"</td>
+                                                                                            <td>42" - 45"</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Hip</td>
+                                                                                            <td>33" - 36"</td>
+                                                                                            <td>36" - 39"</td>
+                                                                                            <td>39" - 41"</td>
+                                                                                            <td>41" - 43"</td>
+                                                                                            <td>43" - 46"</td>
+                                                                                            <td>46" - 49"</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 text-center">
+                                                                            <img src="assets/img/sizeMeasure.jpg" class="w-50" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <div class="accordion-header" id="headingThree">
+                                                                <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                                Shipping & Returns
+                                                                </button>
+                                                            </div>
+                                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                                                                <div class="accordion-body pt-0">
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-12 proDetailHeading">Returns Policy</div>
+                                                                        <div class="col-12 proDetailText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quia ab quo cupiditate corrupti quibusdam iure deserunt sint maxime itaque?</div>
+                                                                    </div>
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-12 proDetailHeading">Shipping</div>
+                                                                        <div class="col-12 proDetailText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quia ab quo cupiditate corrupti quibusdam iure deserunt sint maxime itaque?</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
                                                             <div class="accordion-header" id="headingTwo">
-                                                                <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                                                 Review & Ratings
                                                                 </button>
                                                             </div>
-                                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
                                                                 <div class="accordion-body pt-0">
                                                                     <div class="row align-items-center mx-0">
-                                                                        <div class="col-5 px-0">
+                                                                        <div class="col-sm-5 px-0">
                                                                             <div class="row mx-0">
                                                                                 <div class="col-12 px-0 totalReviews">74 Reviews</div>
                                                                                 <div class="col-12 px-0 totalReviewStar">
@@ -577,7 +676,7 @@
                                                                                 <div class="col-12 px-0 reviewLight">Customers recommended this product</div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-7 pe-0">
+                                                                        <div class="col-sm-7 ps-sm-2 px-0 mt-3 mt-sm-0">
                                                                             <div class="row mx-0 align-items-center reviewLine">
                                                                                 <div class="col-auto px-0 reviewStar">
                                                                                     <span>5</span>
@@ -653,14 +752,14 @@
                                                                                     <div class="reviewLight">June 28, 2019</div>
                                                                                 </div>
                                                                                 <div class="col px-0">
-                                                                                    <div class="d-flex userReviewStar mb-1">
+                                                                                    <div class="d-flex userReviewStar mb-3 mb-lg-1 justify-content-end justify-content-lg-start">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                     </div>
-                                                                                    <div class="reviewLight">83% of users found this review helpful</div>
+                                                                                    <div class="reviewLight d-none d-lg-block">83% of users found this review helpful</div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -711,14 +810,14 @@
                                                                                     <div class="reviewLight">June 28, 2019</div>
                                                                                 </div>
                                                                                 <div class="col px-0">
-                                                                                    <div class="d-flex userReviewStar mb-1">
+                                                                                    <div class="d-flex userReviewStar mb-3 mb-lg-1 justify-content-end justify-content-lg-start">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                     </div>
-                                                                                    <div class="reviewLight">83% of users found this review helpful</div>
+                                                                                    <div class="reviewLight d-none d-lg-block">83% of users found this review helpful</div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -769,14 +868,14 @@
                                                                                     <div class="reviewLight">June 28, 2019</div>
                                                                                 </div>
                                                                                 <div class="col px-0">
-                                                                                    <div class="d-flex userReviewStar mb-1">
+                                                                                    <div class="d-flex userReviewStar mb-3 mb-lg-1 justify-content-end justify-content-lg-start">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                         <img src="assets/img/yellowStar.svg" alt="">
                                                                                     </div>
-                                                                                    <div class="reviewLight">83% of users found this review helpful</div>
+                                                                                    <div class="reviewLight d-none d-lg-block">83% of users found this review helpful</div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -826,9 +925,207 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="container-fluid py-5">
+                        <div class="container">
+                            <div class="row d-none d-lg-flex">
+                                <div class="col-12 mb-4 text-center heading">Related products</div>
+                            </div>
+                            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2 g-3 g-sm-4 cartBtns">
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro1.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Sneakers & Keds</div>
+                                            <div class="productName">Women Colorblock Sneakers</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹1500 <span>₹1700</span></div>
+                                                <div class="productRating align-items-center d-none d-sm-flex">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro2.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Women’s T-shirt</div>
+                                            <div class="productName">Cotton Lace Blouse</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹500 <span>₹700</span></div>
+                                                <div class="productRating d-none d-sm-flex align-items-center">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro3.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Women’s Shorts</div>
+                                            <div class="productName">Mom High Waist Shorts</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹500 <span>₹700</span></div>
+                                                <div class="productRating d-none d-sm-flex align-items-center">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro5.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Sportswear</div>
+                                            <div class="productName">Women Sports Jacket</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹500 <span>₹700</span></div>
+                                                <div class="productRating d-none d-sm-flex align-items-center">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="javascript:;" class="row mx-0 productCard text-decoration-none">
+                                        <div class="col-12 productImg">
+                                            <div class="overflow-hidden w-100 h-100 position-relative productImgInner">
+                                                <img src="assets/img/pro4.jpg" class="w-100 h-100 proImg" alt="">
+                                                <div class="expandOverlay h-100 w-100 position-absolute top-0 start-0"></div>
+                                                <div class="wishlistBox d-flex align-items-center justify-content-center rounded-circle bg-white">
+                                                    <img src="assets/img/wishlistLightBlue.svg" alt="">
+                                                </div>
+                                                <div class="expandBox d-flex align-items-center justify-content-center bg-dark" data-bs-toggle="modal" data-bs-target="#productPrivew">
+                                                    <img src="assets/img/expand.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 prodetailBox">
+                                            <div class="productDes">Men’s Sunglasses</div>
+                                            <div class="productName">Polarized Sunglasses</div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="productPrice">₹500 <span>₹700</span></div>
+                                                <div class="productRating d-none d-sm-flex align-items-center">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                    <img src="assets/img/star.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="mt-2">
+                                                <button class="cart-button btn btn-theme1 text-white">
+                                                    <span class="add-to-cart">Add to cart</span>
+                                                    <span class="added">Added</span>
+                                                    <img src="assets/img/trollyWhite.svg" class="shoppingCartImg" alt="">
+                                                    <img src="assets/img/fillWhiteBag.svg" class="shoppingBag" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- web footer starts here -->
-                    <footer class="container-fluid bg-dark d-none d-lg-block">
+                    <footer class="container-fluid bg-dark d-none d-lg-block webFooter">
                         <div class="container">
                             <div class="row row-cols-5 py-5">
                                 <div class="col">
@@ -1203,62 +1500,5 @@
     <script src="assets/libs/select2/select2.min.js"></script>
     <!-- Custom Js -->
     <script src="assets/js/index.js"></script>
-    <script>
-        let footerYear = document.querySelector('#footerYear');
-        footerYear.innerHTML = new Date().getFullYear();
-    </script>
-    <script>
-        // let decrementBtns = document.querySelectorAll('.decrementBtn');
-        // let valueBoxs = document.querySelectorAll('.valueBox');
-        // let incrementBtns = document.querySelectorAll('.incrementBtn');
-        // let count = 0;
-
-        // valueBoxs.forEach(valueBox => {
-        //     valueBox.innerHTML = count;
-        // })
-
-        // decrementBtns.forEach(decrementBtn => {
-        //     decrementBtn.addEventListener('click', (e)=> {
-        //         e.currentTarget.nextSibling.innerHTML = count-1
-        //     })
-        // })
-
-        // incrementBtns.forEach(incrementBtn => {
-        //     incrementBtn.addEventListener('click', (e)=> {
-        //         e.currentTarget.parentSibling.innerHTML = count+1
-        //     })
-        // })
-
-    </script>
-    <script>
-        const cartButtons = document.querySelectorAll('.cart-button');
-
-cartButtons.forEach(button => {
-	button.addEventListener('click', cartClick);
-});
-
-function cartClick() {
-	let button = this;
-	button.classList.add('clicked');
-}
-    </script>
-    <script>
-        let previewImgThumbs = document.querySelectorAll('.previewImgThumb');
-        let imgForPreview = document.querySelector('.imgForPreview');
-        let vidClickSlide = document.querySelector('.vidClickSlide');
-        let productPreviewImgSide = document.querySelector('.productPreviewImgSide');
-
-        previewImgThumbs.forEach(previewImgThumb => {
-        previewImgThumb.addEventListener('mouseover', (e)=> {
-            imgForPreview.src = e.currentTarget.src
-            productPreviewImgSide.classList.remove('videoPreviewOn')
-            productPreviewImgSide.classList.add('imgPreviewOn')
-        })
-        })
-        vidClickSlide.addEventListener('mouseover', (e)=> {
-            productPreviewImgSide.classList.add('videoPreviewOn')
-            productPreviewImgSide.classList.remove('imgPreviewOn')
-        })
-    </script>
 </body>
 </html>
