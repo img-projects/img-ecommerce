@@ -26,6 +26,74 @@ if(document.querySelector('.Header')) {
   })
 }
 
+// cart offcanvas
+if(document.querySelector('.cartOffcanvas')) {
+        // cart offcanvas price box
+        let priceDetailBox = document.querySelector('.priceDetailBox');
+        let priceDetailImg = document.querySelector('.priceDetailImg');
+        priceDetailImg.addEventListener('click', ()=> {
+        priceDetailBox.classList.toggle('show')
+        })
+
+
+        const cartOffcanvas = document.querySelector('.cartOffcanvas');
+        const goToAddressBtn = document.querySelector('#goToAddressBtn');
+        const goToShippingBtn = document.querySelector('#goToShippingBtn');
+        const goToPaymentBtn = document.querySelector('#goToPaymentBtn');
+        const backToshippingBtn = document.querySelector('#backToshippingBtn');
+        const backToAddressBtn = document.querySelector('#backToAddressBtn');
+        const backToCartBtn = document.querySelector('#backToCartBtn');
+
+        goToAddressBtn.addEventListener('click', ()=> {
+            goToAddressBtn.classList.add('disabled')
+            setTimeout(()=> {
+                cartOffcanvas.classList.remove('cartActive')
+                cartOffcanvas.classList.add('addressActive')
+                goToAddressBtn.classList.remove('disabled')
+            }, 1000)
+        })
+        goToShippingBtn.addEventListener('click', ()=> {
+            goToShippingBtn.classList.add('disabled')
+            setTimeout(()=>{
+                cartOffcanvas.classList.remove('addressActive')
+                cartOffcanvas.classList.add('shippingActive')
+                goToShippingBtn.classList.remove('disabled')
+            }, 1000)
+        })
+        goToPaymentBtn.addEventListener('click', ()=> {
+            goToPaymentBtn.classList.add('disabled')
+            setTimeout(()=>{
+                cartOffcanvas.classList.remove('shippingActive')
+                cartOffcanvas.classList.add('paymentActive')
+                goToPaymentBtn.classList.remove('disabled')
+            }, 1000)
+        })
+        backToshippingBtn.addEventListener('click', ()=> {
+            backToshippingBtn.classList.add('disabled')
+            setTimeout(()=>{
+                cartOffcanvas.classList.remove('paymentActive')
+                cartOffcanvas.classList.add('shippingActive')
+                backToshippingBtn.classList.remove('disabled')
+            }, 1000)
+        })
+        backToAddressBtn.addEventListener('click', ()=> {
+                backToAddressBtn.classList.add('disabled')
+            setTimeout(()=>{
+                cartOffcanvas.classList.remove('shippingActive')
+                cartOffcanvas.classList.add('addressActive')
+                backToAddressBtn.classList.remove('disabled')
+            }, 1000)
+        })
+        backToCartBtn.addEventListener('click', ()=> {
+            backToCartBtn.classList.add('disabled')
+            setTimeout(()=>{
+                cartOffcanvas.classList.remove('addressActive')
+                cartOffcanvas.classList.add('cartActive')
+                backToCartBtn.classList.remove('disabled')
+            }, 1000)
+        })
+}
+
 
 // footer current year
 if(document.querySelector('.webFooter')) {

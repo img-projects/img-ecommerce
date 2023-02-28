@@ -32,7 +32,7 @@
 
     <!-- Dynamic Meta Tags (Should change for every page) -->
 
-    <title>Avone</title>
+    <title>Product Detail | Avone</title>
 
         <!-- Required meta tags -->
     <meta name="title" content="Title here" />
@@ -42,17 +42,17 @@
     <!-- Twitter Meta -->
     <meta name="twitter:title" content="Title here">
     <meta name="twitter:description" content="Discrption here">
-    <meta name="twitter:image" content="assets/img/logo.png">
+    <meta name="twitter:image" content="assets/img/avoneLogo.svg">
 
     <!-- Facebook Meta -->
     <meta property="og:url" content="">
     <meta property="og:title" content="Title here">
     <meta property="og:description" content="Discrption here">
-    <meta property="og:image" content="assets/img/logo.png">
-    <meta property="og:image:secure_url" content="assets/img/logo.png">
+    <meta property="og:image" content="assets/img/avoneLogo.svg">
+    <meta property="og:image:secure_url" content="assets/img/avoneLogo.svg">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png" />
-    <link rel="icon" type="image/x-icon" href="assets/img/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/avoneLogo.svg" />
+    <link rel="icon" type="image/x-icon" href="assets/img/avoneLogo.svg" />
     <meta name="classification" content="Title here" />
     <link rel="canonical" href="" />
     <!-- jquery -->
@@ -354,10 +354,10 @@
                         <div class="container">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb py-1">
-                                    <li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="javascript:;">Fashion</a></li>
-                                    <li class="breadcrumb-item"><a href="javascript:;">Women's Wear</a></li>
-                                    <li class="breadcrumb-item active"><a href="javascript:;">Denim Jeans</a></li>
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="product-category.html">Fashion</a></li>
+                                    <li class="breadcrumb-item"><a href="product-category.html">Women's Wear</a></li>
+                                    <li class="breadcrumb-item active"><a href="product-detail.html">Denim Jeans</a></li>
                                 </ol>
                             </nav>
                         </div>
@@ -1207,34 +1207,396 @@
                     </footer>
                     <!--web  footer ends here -->
                 </div>
+                <div class="offcanvas offcanvas-end cartOffcanvas cartActive" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+                    <div class="offcanvas-header border-bottom">
+                        <div class="title" id="cartOffcanvasLabel">
+                            <span class="cartSectionHeading d-none">Your Cart</span>
+                            <span class="addressSectionHeading d-none">Select Address</span>
+                            <span class="shippingSectionHeading d-none">Select Shipping Method</span>
+                            <span class="paymentSectionHeading d-none">Select Payment Method</span>
+                        </div>
+                        <button type="button" class="closeBtn shadow-none" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <img src="assets/img/crossLightBlue.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body py-0">
+                        <div class="row mx-0 cartSectionBody d-none">
+                            <div class="col-12 cartCard">
+                                <a href="javascript:;" class="row mx-0 cartCardInner text-decoration-none">
+                                    <div class="col-auto ps-0">
+                                        <div class="cartProImg">
+                                            <img src="assets/img/pro1.jpg" alt="" class="w-100 h-100">
+                                        </div>
+                                    </div>
+                                    <div class="col px-0">
+                                        <div class="row">
+                                            <div class="col cartProName align-items-center">Women Colorblock Sneakers</div>
+                                            <div class="col-auto cartRemoveImg">
+                                                <img src="assets/img/crossLightBlue.svg" alt="">
+                                            </div>
+                                            <div class="productRating d-none d-sm-flex align-items-center mb-1">
+                                                <img src="assets/img/star.png" alt="">
+                                                <img src="assets/img/star.png" alt="">
+                                                <img src="assets/img/star.png" alt="">
+                                                <img src="assets/img/star.png" alt="">
+                                                <img src="assets/img/star.png" alt="">
+                                            </div>
+                                            <div class="col-12 cartProColor">Sneakers & Keds</div>
+                                            <div class="col cartProPrice">₹500 <span>₹700</span></div>
+                                            <div class="col-auto cartPlusMinus d-flex">
+                                                <span class="decrementBtn">-</span>
+                                                <span class="valueBox">1</span>
+                                                <span class="incrementBtn">+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 cartCard">
+                                <a href="javascript:;" class="row mx-0 cartCardInner text-decoration-none">
+                                    <div class="col-auto ps-0">
+                                        <div class="cartProImg">
+                                            <img src="assets/img/pro2.jpg" alt="" class="w-100 h-100">
+                                        </div>
+                                    </div>
+                                    <div class="col px-0">
+                                        <div class="row align-items-center">
+                                            <div class="col cartProName">Cotton Lace Blouse</div>
+                                            <div class="col-auto cartRemoveImg">
+                                                <img src="assets/img/crossLightBlue.svg" alt="">
+                                            </div>
+                                            <div class="productRating d-none d-sm-flex align-items-center mb-1">
+                                                <img src="assets/img/star.png" alt="">
+                                                <img src="assets/img/star.png" alt="">
+                                                <img src="assets/img/star.png" alt="">
+                                                <img src="assets/img/star.png" alt="">
+                                                <img src="assets/img/star.png" alt="">
+                                            </div>
+                                            <div class="col-12 cartProColor">Women’s T-shirt</div>
+                                            <div class="col cartProPrice">₹500 <span>₹700</span></div>
+                                            <div class="col-auto cartPlusMinus d-flex">
+                                                <span class="decrementBtn">-</span>
+                                                <span class="valueBox">1</span>
+                                                <span class="incrementBtn">+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row mx-0 addressSectionBody py-2 d-none">
+                            <div class="col-12 px-0 mb-3">
+                                <input type="radio" name="selectAddress" class="d-none selectAddressInput" id="selectAddress1" checked>
+                                <label for="selectAddress1" class="deliverToBox row mx-0 p-3">
+                                    <div class="reciverName col px-0">Rakesh Sharma</div>
+                                    <div class="col-auto px-0">
+                                        <span class="checkbox"></span>
+                                    </div>
+                                    <div class="reciverAddress col-12 px-0">66, Sanskar Bharti Society, Naranpura, Surat, Gujarat</div>
+                                </label>
+                            </div>
+                            <div class="col-12 px-0 mb-3">
+                                <input type="radio" name="selectAddress" class="d-none selectAddressInput" id="selectAddress2">
+                                <label for="selectAddress2" class="deliverToBox row mx-0 p-3">
+                                    <div class="reciverName col px-0">Sanjay Singh</div>
+                                    <div class="col-auto px-0">
+                                        <span class="checkbox"></span>
+                                    </div>
+                                    <div class="reciverAddress col-12 px-0">3, Sanskar Bharti Society, Naranpura, Surat, Gujarat</div>
+                                </label>
+                            </div>
+                            <div class="col-12 px-0 mb-3">
+                                <input type="radio" name="selectAddress" class="d-none selectAddressInput" id="selectAddress3">
+                                <label for="selectAddress3" class="deliverToBox row mx-0 p-3">
+                                    <div class="reciverName col px-0">Rita Sharma</div>
+                                    <div class="col-auto px-0">
+                                        <span class="checkbox"></span>
+                                    </div>
+                                    <div class="reciverAddress col-12 px-0">35, Sanskar Bharti Society, Naranpura, Surat, Gujarat</div>
+                                </label>
+                            </div>
+                            <div class="col-12 px-0">
+                                <div class="w-100 d-flex align-items-center collapsed justify-content-between p-3 addAddressBtn" data-bs-toggle="collapse" data-bs-target="#addNewAddress" aria-expanded="false" aria-controls="addNewAddress">
+                                    <span class="addText">Add New Address</span><span class="checkbox"></span>
+                                </div>
+                                <div class="collapse" id="addNewAddress">
+                                    <div class="col-12 px-0 addressInput">
+                                        <label for="addressInput1" class="form-label">Name</label>
+                                        <input type="text" class="form-control shadow-none" id="addressInput1" placeholder="Enter Name">
+                                    </div>
+                                    <div class="col-12 px-0 addressInput">
+                                        <label for="addressInput3" class="form-label">Email Address</label>
+                                        <input type="text" class="form-control shadow-none" id="addressInput3" placeholder="Enter Email Address">
+                                    </div>
+                                    <div class="col-12 px-0 addressInput">
+                                        <label for="addressInput4" class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control shadow-none" id="addressInput4" placeholder="Enter Phone Number">
+                                    </div>
+                                    <div class="col-12 px-0 addressInput">
+                                        <label for="addressInput5" class="form-label">Address</label>
+                                        <input type="text" class="form-control shadow-none" id="addressInput5" placeholder="Enter Address">
+                                    </div>
+                                    <div class="col-12 px-0 addressInput">
+                                        <label for="addressInput6" class="form-label">City</label>
+                                        <input type="text" class="form-control shadow-none" id="addressInput6" placeholder="Enter City">
+                                    </div>
+                                    <div class="col-12 px-0 addressInput">
+                                        <label for="addressInput7" class="form-label">State</label>
+                                        <input type="text" class="form-control shadow-none" id="addressInput7" placeholder="Enter State">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-0 shippingSectionBody py-2 d-none">
+                            <div class="col-12 px-0 mb-3">
+                                <input type="radio" name="shippingMethod" class="d-none shippingMethodInput" id="shippingMethod1" checked>
+                                <label for="shippingMethod1" class="shippingBox row mx-0 p-3">
+                                    <div class="shippingName col px-0">Courier</div>
+                                    <div class="col-auto px-0">
+                                        <span class="checkbox"></span>
+                                    </div>
+                                    <div class="shippingDetail col-12 px-0">All addresses (default zone), United States & Canada</div>
+                                    <div class="col-12 px-0 d-flex align-items-center justify-content-between my-1">
+                                        <div class="shippingDetailHead">Delivery time</div>
+                                        <div class="shippingDetail">2 - 4 days</div>
+                                    </div>
+                                    <div class="col-12 px-0 d-flex align-items-center justify-content-between">
+                                        <div class="shippingDetailHead">Handling fee</div>
+                                        <div class="shippingDetail">₹100</div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-12 px-0 mb-3">
+                                <input type="radio" name="shippingMethod" class="d-none shippingMethodInput" id="shippingMethod2">
+                                <label for="shippingMethod2" class="shippingBox row mx-0 p-3">
+                                    <div class="shippingName col px-0">Local Shipping</div>
+                                    <div class="col-auto px-0">
+                                        <span class="checkbox"></span>
+                                    </div>
+                                    <div class="shippingDetail col-12 px-0">All addresses (default zone), United States & Canada</div>
+                                    <div class="col-12 px-0 d-flex align-items-center justify-content-between my-1">
+                                        <div class="shippingDetailHead">Delivery time</div>
+                                        <div class="shippingDetail">up to one week</div>
+                                    </div>
+                                    <div class="col-12 px-0 d-flex align-items-center justify-content-between">
+                                        <div class="shippingDetailHead">Handling fee</div>
+                                        <div class="shippingDetail">₹10</div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-12 px-0 mb-3">
+                                <input type="radio" name="shippingMethod" class="d-none shippingMethodInput" id="shippingMethod3">
+                                <label for="shippingMethod3" class="shippingBox row mx-0 p-3">
+                                    <div class="shippingName col px-0">Flat Rate</div>
+                                    <div class="col-auto px-0">
+                                        <span class="checkbox"></span>
+                                    </div>
+                                    <div class="shippingDetail col-12 px-0">All addresses (default zone)</div>
+                                    <div class="col-12 px-0 d-flex align-items-center justify-content-between my-1">
+                                        <div class="shippingDetailHead">Delivery time</div>
+                                        <div class="shippingDetail">5 - 7 days</div>
+                                    </div>
+                                    <div class="col-12 px-0 d-flex align-items-center justify-content-between">
+                                        <div class="shippingDetailHead">Handling fee</div>
+                                        <div class="shippingDetail">₹50</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row mx-0 paymentSectionBody py-2 d-none">
+                            <div class="col-12 px-0 mb-3">
+                                <div class="w-100 d-flex align-items-center collapsed justify-content-between p-3 paymentOptionBtn" data-bs-toggle="collapse" data-bs-target="#paymentOption1" aria-expanded="false" aria-controls="paymentOption1">
+                                    <span class="addText">UPI</span><span class="checkbox"></span>
+                                </div>
+                                <div class="collapse" id="paymentOption1">
+                                    <div class="row mx-0 pt-3 g-2">
+                                        <div class="col-6">
+                                            <input type="radio" name="selectPayment" class="d-none selectPaymentInput" id="selectPayment1" checked>
+                                            <label for="selectPayment1" class="paymentBox row mx-0">
+                                                <div class="paymentType col px-0">Phone Pe</div>
+                                                <div class="col-auto px-0">
+                                                    <span class="checkbox"></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="radio" name="selectPayment" class="d-none selectPaymentInput" id="selectPayment2">
+                                            <label for="selectPayment2" class="paymentBox row mx-0">
+                                                <div class="paymentType col px-0">Your UPI ID</div>
+                                                <div class="col-auto px-0">
+                                                    <span class="checkbox"></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 px-0 mb-3">
+                                <div class="w-100 d-flex align-items-center collapsed justify-content-between p-3 paymentOptionBtn" data-bs-toggle="collapse" data-bs-target="#paymentOption2" aria-expanded="false" aria-controls="paymentOption2">
+                                    <span class="addText">Wallets</span><span class="checkbox"></span>
+                                </div>
+                                <div class="collapse" id="paymentOption2">
+                                    <div class="row mx-0 pt-3 g-2">
+                                        <div class="col-6">
+                                            <input type="radio" name="selectPayment" class="d-none selectPaymentInput" id="selectPayment3" checked>
+                                            <label for="selectPayment3" class="paymentBox row mx-0">
+                                                <div class="paymentType col px-0">Paytm Wallet</div>
+                                                <div class="col-auto px-0">
+                                                    <span class="checkbox"></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="radio" name="selectPayment" class="d-none selectPaymentInput" id="selectPayment4">
+                                            <label for="selectPayment4" class="paymentBox row mx-0">
+                                                <div class="paymentType col px-0">Phone Pe Wallet</div>
+                                                <div class="col-auto px-0">
+                                                    <span class="checkbox"></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 px-0 mb-3">
+                                <div class="w-100 d-flex align-items-center collapsed justify-content-between p-3 paymentOptionBtn" data-bs-toggle="collapse" data-bs-target="#paymentOption3" aria-expanded="false" aria-controls="paymentOption3">
+                                    <span class="addText">Credit/Debit/ATM Card</span><span class="checkbox"></span>
+                                </div>
+                                <div class="collapse" id="paymentOption3">
+                                    <div class="row mx-0 py-3 d-md-none">
+                                        <div class="col-12 px-0 paymentInput">
+                                            <label for="paymentInput1" class="form-label">Account Holder Name</label>
+                                            <input type="text" class="form-control shadow-none" id="paymentInput1" placeholder="">
+                                        </div>
+                                        <div class="col-12 px-0 paymentInput">
+                                            <label for="paymentInput2" class="form-label">Card Number</label>
+                                            <input type="tel" class="form-control shadow-none" id="paymentInput2" placeholder="----/----/----/----">
+                                        </div>
+                                        <div class="col-6 ps-0 paymentInput">
+                                            <label for="paymentInput3" class="form-label">Expiry Date</label>
+                                            <input type="tel" class="form-control shadow-none" id="paymentInput3" placeholder="MM/YY">
+                                        </div>
+                                        <div class="col-6 pe-0 paymentInput">
+                                            <label for="paymentInput4" class="form-label">CVV</label>
+                                            <input type="tel" class="form-control shadow-none" id="paymentInput4" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offcanvas-footer p-3 border-top position-relative">
+                        <div class="row mx-0 priceDetailBox bg-white w-100 position-absolute bottom-100 start-0 p-3">
+                            <div class="col-12 priceHeading">Price Details</div>
+                            <div class="col-12 px-0 pt-2">
+                                <div class="row mx-0">
+                                    <div class="col priceType">Price(2 item)</div>
+                                    <div class="col-auto priveValue">₹1,499</div>
+                                </div>
+                            </div>
+                            <div class="col-12 px-0 py-2">
+                                <div class="row mx-0">
+                                    <div class="col priceType">Delivery Charges</div>
+                                    <div class="col-auto priveValue free">FREE</div>
+                                </div>
+                            </div>
+                            <div class="col-12 px-0">
+                                <div class="row mx-0">
+                                    <div class="col priceType2">Amount Payable</div>
+                                    <div class="col-auto priveValue2">₹1,499</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col subtotal">SubTotal:</div>
+                            <div class="col-auto subtotalValue">
+                                <span>₹1,499</span>
+                                <img class="priceDetailImg" src="assets/img/queryIcon.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="row cartSectionFooter d-none">
+                            <div class="col-12 mt-2">
+                                <button class="btn btn-theme1 addToCartBtn btnStyle1 w-100 stepBtn" id="goToAddressBtn">
+                                    <div class="spinner-border text-light me-1 d-none" role="status"></div>
+                                    <span class="d-none loadingText">Loading...</span>
+                                    <span class="mainText">Proceed To Checkout</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row addressSectionFooter d-none">
+                            <div class="col-6 mt-2">
+                                <button class="btn btn-theme1 addToCartBtn btnStyle1 w-100 stepBtn" id="backToCartBtn">
+                                    <div class="spinner-border text-light me-1 d-none" role="status"></div>
+                                    <span class="d-none loadingText">Loading...</span>
+                                    <span class="mainText">Back</span>
+                                </button>
+                            </div>
+                            <div class="col-6 mt-2">
+                                <button class="btn btn-theme1 addToCartBtn btnStyle1 w-100 stepBtn" id="goToShippingBtn">
+                                    <div class="spinner-border text-light me-1 d-none" role="status"></div>
+                                    <span class="d-none loadingText">Loading...</span>
+                                    <span class="mainText">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row shippingSectionFooter d-none">
+                            <div class="col-6 mt-2">
+                                <button class="btn btn-theme1 addToCartBtn btnStyle1 w-100 stepBtn" id="backToAddressBtn">
+                                    <div class="spinner-border text-light me-1 d-none" role="status"></div>
+                                    <span class="d-none loadingText">Loading...</span>
+                                    <span class="mainText">Back</span>
+                                </button>
+                            </div>
+                            <div class="col-6 mt-2">
+                                <button class="btn btn-theme1 addToCartBtn btnStyle1 w-100 stepBtn" id="goToPaymentBtn">
+                                    <div class="spinner-border text-light me-1 d-none" role="status"></div>
+                                    <span class="d-none loadingText">Loading...</span>
+                                    <span class="mainText">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row paymentSectionFooter d-none">
+                            <div class="col-6 mt-2">
+                                <button class="btn btn-theme1 addToCartBtn btnStyle1 w-100 stepBtn" id="backToshippingBtn">
+                                    <div class="spinner-border text-light me-1 d-none" role="status"></div>
+                                    <span class="d-none loadingText">Loading...</span>
+                                    <span class="mainText">Back</span>
+                                </button>
+                            </div>
+                            <div class="col-6 mt-2">
+                                <button class="btn btn-theme1 addToCartBtn btnStyle1 w-100">Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!--mobile footer starts here -->
                 <div class="mobileFooter d-lg-none">
                     <div class="row mx-0 row-cols-5">
-                        <div class="col bottomBarLink active">
+                        <a href="index.html" class="col bottomBarLink text-decoration-none active">
                             <div class="bottomBarLinkInner position-relative">
                                 <img src="assets/img/homeLightBlue.svg" alt="">
                                 <div class="BottomBarText">Home</div>
                             </div>
-                        </div>
-                        <div class="col bottomBarLink">
+                        </a>
+                        <a href="product-category.html" class="col bottomBarLink text-decoration-none">
                             <div class="bottomBarLinkInner position-relative">
                                 <img src="assets/img/categoriesLightBlue.svg" alt="">
                                 <div class="BottomBarText">Category</div>
                             </div>
-                        </div>
-                        <div class="col bottomBarLink">
+                        </a>
+                        <a href="javascript:;" class="col bottomBarLink text-decoration-none">
                             <div class="bottomBarLinkInner position-relative">
                                 <img src="assets/img/notificationLightBlue.svg" alt="">
                                 <div class="BottomBarText">Notification</div>
                             </div>
-                        </div>
-                        <div class="col bottomBarLink">
+                        </a>
+                        <div class="col bottomBarLink text-decoration-none">
                             <div class="bottomBarLinkInner position-relative">
                                 <img src="assets/img/wishlistLightBlue.svg" alt="">
                                 <div class="BottomBarText">Wishlist</div>
                             </div>
                         </div>
-                        <div class="col bottomBarLink" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+                        <div class="col bottomBarLink text-decoration-none" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
                             <div class="bottomBarLinkInner position-relative">
                                 <img src="assets/img/bagLightBlue.svg" alt="">
                                 <div class="BottomBarText">Cart</div>
@@ -1268,90 +1630,7 @@
     </div>
 </div>
 
-<!-- cart offcanvas -->
-<div class="offcanvas offcanvas-end cartOffcanvas" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
-    <div class="offcanvas-header border-bottom">
-        <div class="title" id="cartOffcanvasLabel">Your Cart</div>
-        <button type="button" class="closeBtn shadow-none" data-bs-dismiss="offcanvas" aria-label="Close">
-            <img src="assets/img/crossLightBlue.svg" alt="">
-        </button>
-    </div>
-    <div class="offcanvas-body py-0">
-        <row class="mx-0">
-            <div class="col-12 cartCard">
-                <a href="javascript:;" class="row mx-0 cartCardInner text-decoration-none">
-                    <div class="col-auto ps-0">
-                        <div class="cartProImg">
-                            <img src="assets/img/pro1.jpg" alt="" class="w-100 h-100">
-                        </div>
-                    </div>
-                    <div class="col px-0">
-                        <div class="row">
-                            <div class="col cartProName align-items-center">Women Colorblock Sneakers</div>
-                            <div class="col-auto cartRemoveImg">
-                                <img src="assets/img/crossLightBlue.svg" alt="">
-                            </div>
-                            <div class="productRating d-none d-sm-flex align-items-center mb-1">
-                                <img src="assets/img/star.png" alt="">
-                                <img src="assets/img/star.png" alt="">
-                                <img src="assets/img/star.png" alt="">
-                                <img src="assets/img/star.png" alt="">
-                                <img src="assets/img/star.png" alt="">
-                            </div>
-                            <div class="col-12 cartProColor">Sneakers & Keds</div>
-                            <div class="col cartProPrice">₹500 <span>₹700</span></div>
-                            <div class="col-auto cartPlusMinus d-flex">
-                                <span class="decrementBtn">-</span>
-                                <span class="valueBox">1</span>
-                                <span class="incrementBtn">+</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 cartCard">
-                <a href="javascript:;" class="row mx-0 cartCardInner text-decoration-none">
-                    <div class="col-auto ps-0">
-                        <div class="cartProImg">
-                            <img src="assets/img/pro2.jpg" alt="" class="w-100 h-100">
-                        </div>
-                    </div>
-                    <div class="col px-0">
-                        <div class="row align-items-center">
-                            <div class="col cartProName">Cotton Lace Blouse</div>
-                            <div class="col-auto cartRemoveImg">
-                                <img src="assets/img/crossLightBlue.svg" alt="">
-                            </div>
-                            <div class="productRating d-none d-sm-flex align-items-center mb-1">
-                                <img src="assets/img/star.png" alt="">
-                                <img src="assets/img/star.png" alt="">
-                                <img src="assets/img/star.png" alt="">
-                                <img src="assets/img/star.png" alt="">
-                                <img src="assets/img/star.png" alt="">
-                            </div>
-                            <div class="col-12 cartProColor">Women’s T-shirt</div>
-                            <div class="col cartProPrice">₹500 <span>₹700</span></div>
-                            <div class="col-auto cartPlusMinus d-flex">
-                                <span class="decrementBtn">-</span>
-                                <span class="valueBox">1</span>
-                                <span class="incrementBtn">+</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </row>
-    </div>
-    <div class="offcanvas-footer p-3 border-top">
-        <div class="row">
-            <div class="col subtotal">SubTotal:</div>
-            <div class="col-auto subtotalValue">₹1000</div>
-            <div class="col-12 mt-2">
-                <button class="btn btn-theme1 addToCartBtn btnStyle1 w-100">View Cart</button>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 
 <!-- mobile menu offcanvas -->
